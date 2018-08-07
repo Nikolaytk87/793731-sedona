@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Николай Абросимов](https://up.htmlacademy.ru/htmlcss/22/user/793731).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Ильина](https://htmlacademy.ru/profile/ellianta).
 
 ---
 
