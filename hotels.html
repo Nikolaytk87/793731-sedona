@@ -10,19 +10,19 @@
 
 <body>
     <header class="main-header">
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
                     <a href="info.html">Информация</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="media.html">Фото и видео</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="map.html">Карта штата</a>
                 </li>
-                <li>
-                    <a class="main-navigation-current" href="hotels.html">Гостиницы</a>
+                <li class="nav-item">
+                    <a class="nav-current" href="hotels.html">Гостиницы</a>
                 </li>
             </ul>
             <a class="main-header-logo" href="index.html">
@@ -36,102 +36,113 @@
 
 
         <section class="sort">
-            <h2>Сортировка:</h2>
-            <b>Найдено: 3</b>
+            <b class="sort-bold">Найдено: 3</b>
+            <h2 class="sort-title">Сортировка:</h2>
             <ul class="sort-list">
-                <li>
+                <li class="sort-item">
                     <a href="#">По цене</a>
                 </li>
-                <li>
+                <li class="sort-item">
                     <a href="#">По типу</a>
                 </li>
-                <li>
+                <li class="sort-item">
                     <a href="#">По рейтингу</a>
                 </li>
-                <li>
+                <li class="sort-item">
                     <a href="#">
+                        <img src="img/pointer.jpg" alt="указатель сортировки">
                         <img src="img/pointer.jpg" alt="указатель сортировки">
                     </a>
                 </li>
             </ul>
         </section>
         <section class="hotels">
-            <h2>Список Отелей</h2>
+            <h2 class="visually-hidden">Список Отелей</h2>
             <ul class="hotels-list">
                 <li class="hotels-item">
-                    <div class="hotels-preview">
-                        <img src="http://placehold.it/150x100" alt="Amara Resort SPA" width="150" height="150">
-                    </div>
+
+                    <img class="hotels-image" src="http://placehold.it/150x100" alt="Amara Resort & SPA" width="150" height="150">
 
                     <div class="hotels-info">
                         <a href="hotels-item1.html">
-                            <h3>
+                            <h3 class="hotels-title">
                                 Amara Resort & SPA
                             </h3>
                         </a>
-                        <span class="hotels-item-type">Гостиница</span>
-                        <span class="hotels-item-cost">от 4000 Р.</span>
-                        <div class="hotels-item-price">
+                        <span class="hotels-type">Гостиница</span>
+                        <span class="hotels-cost">от 4000 Р.</span>
+                        <div class="hotels-price">
                             <a class="button" href="#">Подробнее</a>
                             <a class="button" href="#">Забронировать</a>
                         </div>
                     </div>
 
-                    <div class="hotels-raiting">
-                        <img src="http://placehold.it/150x100" alt="3-4 звезды" width="250" height="50">
-                        <p>Рейтинг: 8,5</p>
+                    <div class="hotels-rating">
+                        <!--нужно отдельный div для звезд и обернуть в общий div p и div ?-->
+                        <!--забыл каким словом можно обозвать звезды вместо hotels-star-->
+                        <div class="hotels-stars">
+                            <img src="http://placehold.it/150x100" alt="4 звезды" width="250" height="50">
+                            <img src="http://placehold.it/150x100" alt="" width="250" height="50">
+                            <img src="http://placehold.it/150x100" alt="" width="250" height="50">
+                            <img src="http://placehold.it/150x100" alt="" width="250" height="50">
+                        </div>
+                        <p class="rating-info">Рейтинг: 8,5</p>
                     </div>
 
                 </li>
                 <li class="hotels-item">
-                    <div class="hotels-preview">
-                        <img src="http://placehold.it/150x100" alt="Desert Quail INN" width="150" height="150">
-                    </div>
+
+                    <img class="hotels-image" src="http://placehold.it/150x100" alt="Desert Quail INN" width="150" height="150">
 
                     <div class="hotels-info">
                         <a href="hotels-item2.html">
-                            <h3>
+                            <h3 class="hotels-title">
                                 Desert Quail INN
                             </h3>
                         </a>
-                        <span class="hotels-item-type">Мотель</span>
-                        <span class="hotels-item-cost">от 3000 Р.</span>
-                        <div class="hotels-item-price">
+                        <span class="hotels-type">Мотель</span>
+                        <span class="hotels-cost">от 3000 Р.</span>
+                        <div class="hotels-price">
                             <a class="button" href="#">Подробнее</a>
                             <a class="button" href="#">Забронировать</a>
                         </div>
                     </div>
 
                     <div class="hotels-rating">
-                        <img src="http://placehold.it/150x100" alt="" width="250" height="50">
-                        <p>Рейтинг: 8,9</p>
+                        <div class="hotels-stars">
+                            <img src="http://placehold.it/150x100" alt="3 звезды" width="250" height="50">
+                            <img src="http://placehold.it/150x100" alt="" width="250" height="50">
+                            <img src="http://placehold.it/150x100" alt="" width="250" height="50">
+                        </div>
+                        <p class="rating-info">Рейтинг: 8,9</p>
 
                     </div>
 
                 </li>
                 <li class="hotels-item">
 
-                    <div class="hotels-preview">
-                        <img src="http://placehold.it/150x100" alt="Villas At Poco" width="150" height="150">
-                    </div>
+                    <img class="hotels-image" src="http://placehold.it/150x100" alt="Villas At Poco" width="150" height="150">
 
                     <div class="hotels-info">
                         <a href="hotels-item3.html">
-                            <h3>
+                            <h3 class="hotels-title">
                                 Villas At Poco
                             </h3>
                         </a>
-                        <span class="hotels-item-type">Апартаменты</span>
-                        <span class="hotels-item-cost">от 2000 Р.</span>
-                        <div class="hotels-item-price">
+                        <span class="hotels-type">Апартаменты</span>
+                        <span class="hotels-cost">от 2000 Р.</span>
+                        <div class="hotels-price">
                             <a class="button" href="#">Подробнее</a>
                             <a class="button" href="#">Забронировать</a>
                         </div>
                     </div>
 
                     <div class="hotels-rating">
-                        <img src="http://placehold.it/150x100" alt="" width="250" height="50">
-                        <p>Рейтинг: 9,2</p>
+                        <div class="hotels-stars">
+                            <img src="http://placehold.it/150x100" alt="2 звезды" width="250" height="50">
+                            <img src="http://placehold.it/150x100" alt="" width="250" height="50">
+                        </div>
+                        <p class="rating-info">Рейтинг: 9,2</p>
                     </div>
 
                 </li>
@@ -142,20 +153,22 @@
         <p class="footer-hashtag">
             #visitsedona
         </p>
-        <div class="footer-social">
-            <ul>
-                <li>
-                    <a class="social-button" href="#twitter">Твиттер</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#facebook">Фэйсбук</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#vk">Вконтакте</a>
-                </li>
-            </ul>
-        </div>
+
+        <ul class="footer-list">
+            <li class="footer-item">
+                <a class="social-button" href="#twitter">Твиттер</a>
+            </li>
+            <li class="footer-item">
+                <a class="social-button" href="#facebook">Фэйсбук</a>
+            </li>
+            <li class="footer-item">
+                <a class="social-button" href="#vk">Вконтакте</a>
+            </li>
+        </ul>
         <div class="footer-logo">
+            <p class="footer-text">
+                Website by
+            </p>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-academy.jpg" alt="HTML ACADEMY">
             </a>
