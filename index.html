@@ -105,14 +105,14 @@
             <form class="appointment-form" action="http://echo.htmlacademy.ru" method="POST">
                 <div class="appointment-item">
                     <label for="appointment-date-entry">Дата заезда: </label>
-                    <input id="appointment-date-entry" type="text" name="date-entry" required>
+                    <input id="appointment-date-entry" type="text" name="date-entry" placeholder="24 апреля 2017" required>
                     <button class="appointment-calendar" type="button">
                         <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
                     </button>
                 </div>
                 <div class="appointment-item">
                     <label for="appointment-date-leave">Дата заезда: </label>
-                    <input id="appointment-date-leave" type="text" name="date-leave" required>
+                    <input id="appointment-date-leave" type="text" name="date-leave" placeholder="4 июля 2017" required>
                     <button class="appointment-calendar" type="button">
                         <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
                     </button>
@@ -120,26 +120,26 @@
                 <div class="appointment-visitor">
                     <div class="appointment-inner">
                         <label for="count-grownup">Взрослые</label>
-                        <button class="appointment-button" type="button" >
-                           <span>-</span>
+                        <button class="appointment-button" type="button">
+                            <span>-</span>
                         </button>
-                        <input class="appointment-count" type="text" name="count-grownup">
-                        <button class="appointment-button" type="button" >
+                        <input class="appointment-count" type="text" name="count-grownup" id="count-grownup">
+                        <button class="appointment-button" type="button">
                             <span>+</span>
                         </button>
                     </div>
                     <div class="appointment-inner">
                         <label for="count-children">Дети</label>
-                        <button class="appointment-button" type="button" >
+                        <button class="appointment-button" type="button">
                             <span>-</span>
                         </button>
-                        <input class="appointment-count" type="text" name="count-children">
-                        <button class="appointment-button" type="button" >
-                           <span>+</span> 
+                        <input class="appointment-count" type="text" name="count-children" id="count-children">
+                        <button class="appointment-button" type="button">
+                            <span>+</span>
                         </button>
                     </div>
                 </div>
-                <button class="appointment-search" type="button" >Найти</button>
+                <button class="appointment-search" type="submit">Найти</button>
             </form>
         </section>
         <div class="map">
