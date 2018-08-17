@@ -98,10 +98,33 @@
         </section>
 
         <section class="appointment">
-            <h2 class="appointment-title">Заинтересовались?</h2>
+            <h2 class="appointment-main-title">Заинтересовались?</h2>
             <p class="appointment-date">Укажите предпологаемые даты поездки,
                 <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-            <!--Здесь будет форма-->
+            <form class="appointment-form" action="http://echo.htmlacademy.ru" method="POST">
+            <h3 class="appointment-title">Поиск гостиницы в Седоне</h3>
+            <div class="appointment-item">
+                <label for="appointment-date-entry">Дата заезда: </label>
+                <input id="appointment-date-entry"  type="date" name="date-entry"  required>
+            </div>
+            <div class="appointment-item">
+                    <label for="appointment-date-leave">Дата заезда: </label>
+                    <input id="appointment-date-leave"  type="date" name="date-leave"  required>
+                </div>
+                <div class="appointment-grownup">
+                    <label for="count-grownup">Взрослые</label>
+                    <button class="appointment-button" type="button" name="button-down"></button>
+                    <input  class="appointment-count" type="text" name="count-grownup">
+                    <button class="appointment-button" type="button" name="button-up"></button>
+                </div>
+                <div class="appointment-children">
+                        <label for="count-children">Дети</label>
+                        <button class="appointment-button" type="button" name="button-down"></button>
+                        <input class="appointment-count" type="text" name="count-children">
+                        <button class="appointment-button" type="button" name="button-up"></button>
+                    </div>
+
+            </form>
         </section>
         <div class="map">
             <img src="img/map.jpg" alt="Карта проезда" width="1200" height="593">
