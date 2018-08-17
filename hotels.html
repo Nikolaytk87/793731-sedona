@@ -46,7 +46,7 @@
                             <label for="filter-parking">Парковка</label>
                         </li>
                         <li class="filter-item">
-                                <input class="filter-input filter-checkbox" type="checkbox" name="wifi" id="filter-wifi">
+                            <input class="filter-input filter-checkbox" type="checkbox" name="wifi" id="filter-wifi">
                             <label for="filter-wifi">Wi-Fi</label>
                         </li>
                     </ul>
@@ -55,28 +55,40 @@
                     <legend class="filter-legend">Тип жилья: </legend>
                     <ul class="filter-list">
                         <li class="filter-item">
-                                <input class="filter-input filter-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                            <input class="filter-input filter-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
                             <label for="filter-hotel">Гостиница</label>
 
                         </li>
                         <li class="filter-item">
-                                <input class="filter-input filter-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                            <input class="filter-input filter-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
                             <label for="filter-motel">Мотель</label>
 
                         </li>
                         <li class="filter-item">
-                                <input class="filter-input filter-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
+                            <input class="filter-input filter-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
                             <label for="filter-apartment">Апартаменты</label>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset class="filter-group">
                     <legend class="filter-legend">Стоимость в сутки(Р): </legend>
-                        <div >
-                            <p class="filter-cost"> от 0   |  до 3000</p>
-                            <input class="filter-range"    type="range" name="range">
+                    <div class="range-filter">
+                        <div class="price-controls">
+                            от
+                            <input class="min-price" type="text" value="0"> 
+                            до
+                            <input class="max-price" type="text" value="3000">
                         </div>
-                        <button class="filter-button" name="search"> Показать</button>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <button class="toggle min-toggle" type="button"> </button>
+                            <button class="toggle max-toggle" type="button"></button>
+                        </div>
+
+                    </div>
+                    <button class="filter-button" type="button" name="search"> Показать</button>
                 </fieldset>
             </form>
         </section>
