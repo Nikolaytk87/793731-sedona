@@ -101,31 +101,45 @@
             <h2 class="appointment-main-title">Заинтересовались?</h2>
             <p class="appointment-date">Укажите предпологаемые даты поездки,
                 <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+                <button class="appointment-main-button">Поиск гостиницы в Седоне</button>
             <form class="appointment-form" action="http://echo.htmlacademy.ru" method="POST">
-            <h3 class="appointment-title">Поиск гостиницы в Седоне</h3>
-            <div class="appointment-item">
-                <label for="appointment-date-entry">Дата заезда: </label>
-                <input id="appointment-date-entry"  type="date" name="date-entry"  required>
-                <button class="appointment-calendar"><img  src="img/icons/calendar.svg" alt="Календарь" width="21" height="22"></button>
-            </div>
-            <div class="appointment-item">
+                <div class="appointment-item">
+                    <label for="appointment-date-entry">Дата заезда: </label>
+                    <input id="appointment-date-entry" type="text" name="date-entry" required>
+                    <button class="appointment-calendar">
+                        <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
+                    </button>
+                </div>
+                <div class="appointment-item">
                     <label for="appointment-date-leave">Дата заезда: </label>
-                    <input id="appointment-date-leave"  type="date" name="date-leave"  required>
-                    <button class="appointment-calendar"><img  src="img/icons/calendar.svg" alt="Календарь" width="21" height="22"></button>
+                    <input id="appointment-date-leave" type="text" name="date-leave" required>
+                    <button class="appointment-calendar">
+                        <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
+                    </button>
                 </div>
-                <div class="appointment-grownup">
-                    <label for="count-grownup">Взрослые</label>
-                    <button class="appointment-button" type="button" name="button-down"><img src="img/icons/icon-min.png" alt="Меньше" width="12" height="3"></button>
-                    <input  class="appointment-count" type="text" name="count-grownup">
-                    <button class="appointment-button" type="button" name="button-up"><img src="img/icons/icon-max.png" alt="Больше" width="11" height="11"></button>
-                </div>
-                <div class="appointment-children">
-                        <label for="count-children">Дети</label>
-                        <button class="appointment-button" type="button" name="button-down"><img src="img/icons/icon-min.png" alt="Меньше" width="12" height="3"></button>
-                        <input class="appointment-count" type="text" name="count-children">
-                        <button class="appointment-button" type="button" name="button-up"><img src="img/icons/icon-max.png" alt="Больше" width="11" height="11"></button>
+                <div class="appointment-visitor">
+                    <div class="appointment-inner">
+                        <label for="count-grownup">Взрослые</label>
+                        <button class="appointment-button" type="button" name="button-down">
+                            <img src="img/icons/icon-min.png" alt="Меньше" width="12" height="3">
+                        </button>
+                        <input class="appointment-count" type="text" name="count-grownup">
+                        <button class="appointment-button" type="button" name="button-up">
+                            <img src="img/icons/icon-max.png" alt="Больше" width="11" height="11">
+                        </button>
                     </div>
-                    <button class="appointment-search" name="search-button">Найти</button>
+                    <div class="appointment-inner">
+                        <label for="count-children">Дети</label>
+                        <button class="appointment-button" type="button" name="button-down">
+                            <img src="img/icons/icon-min.png" alt="Меньше" width="12" height="3">
+                        </button>
+                        <input class="appointment-count" type="text" name="count-children">
+                        <button class="appointment-button" type="button" name="button-up">
+                            <img src="img/icons/icon-max.png" alt="Больше" width="11" height="11">
+                        </button>
+                    </div>
+                </div>
+                <button class="appointment-search" name="search-button">Найти</button>
             </form>
         </section>
         <div class="map">
