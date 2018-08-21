@@ -43,11 +43,63 @@ a {
     color: #81b3d2;
 }
 
+.main-caption {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.advantages-reasons {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+    background-color: #ffffff;
+}
+
 .advantages-item,
 .offers-item {
     list-style: none;
 }
 
-.advantages-description {
+.advantages-title,
+.offers-title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.advantages-text,
+.offers-text,
+.advantages-digit {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.appointment-main-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
     text-align: center;
+}
+
+.appointment-date {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
