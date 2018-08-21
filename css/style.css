@@ -1,21 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #5c5c5c;
+  color: #000000;
   text-transform: uppercase;
-
   background-color: #ffffff;
-  background-image: url("../img/background-index.jpg");
-  background-repeat: no-repeat;
-  background-size: 1200px 800px;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+.container {
+  background-color: #ffffff;
+  background-image: url("../img/background-index.jpg");
+  background-repeat: no-repeat;
+  background-position: auto;
+
 }
 .main-nav {
   font-size: 14px;
@@ -28,17 +32,19 @@ a {
 .main-header-logo {
   list-style: none;
 }
-.nav-list a,
+/* .nav-list a,
 .main-header-logo a {
-  color: #000000;
+  color: #333333;
+} */
+.nav-list:active {
+  color: #cccccc;
 }
-.main-header-logo a:focus,
-.nav-list a:focus,
- {
-  background-color: #b2b2b2;
+.nav-list a:hover,
+.nav-list a:focus {
+  color: #99cccc;
 }
 
-.nav-list a:hover,
-.main-header-logo a:hover {
-  background-color: #81b3d2;
+.advantages-list {
+  list-style: none;
 }
+
