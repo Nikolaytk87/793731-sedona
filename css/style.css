@@ -1,44 +1,51 @@
 body {
-  margin: 0;
-  padding: 0;
-  
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #5c5c5c;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
-  background-image: url("../img/background-index.jpg");
-  background-repeat: no-repeat;
-  background-size: 1200px 800px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #ffffff;
 }
 
 a {
-  text-decoration: none;
-}
-.main-nav {
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
-  background-color: #ffffff;
+    text-decoration: none;
+    color: inherit;
 }
 
-.nav-list,
-.main-header-logo {
-  list-style: none;
+.container {
+    background-color: #ffffff;
+    background-image: url("../img/background-index.jpg");
+    background-repeat: no-repeat;
+    background-position: auto;
 }
-.nav-list a,
-.main-header-logo a {
-  color: #000000;
+
+.main-nav {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
 }
-.main-header-logo a:focus,
-.nav-list a:focus,
- {
-  background-color: #b2b2b2;
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .nav-list a:hover,
-.main-header-logo a:hover {
-  background-color: #81b3d2;
+.nav-list a:focus {
+    color: #81b3d2;
+}
+
+.advantages-item,
+.offers-item {
+    list-style: none;
+}
+
+.advantages-description {
+    text-align: center;
 }
