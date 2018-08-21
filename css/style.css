@@ -48,6 +48,28 @@ a {
     list-style: none;
 }
 
-.advantages-description {
-    text-align: center;
+.advantages-title,
+.offers-title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.advantages-text,
+.offers-text,
+.advantages-digit {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
