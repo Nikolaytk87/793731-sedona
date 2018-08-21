@@ -23,12 +23,14 @@ a {
 
 .main-nav {
     font-size: 14px;
-    line-height: 21px;
+    font-weight: bold;
+    line-height: 26px;
     color: #000000;
     background-color: #ffffff;
 }
 
-.nav-list {
+.nav-list,
+.offers-list {
     list-style: none;
 }
 
@@ -46,7 +48,6 @@ a {
     list-style: none;
 }
 
-
-/* .advantages-description {
+.advantages-description {
     text-align: center;
-} */
+}
