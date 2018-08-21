@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    background-color: #ffffff;
+    background-image: url("../img/background-index.jpg");
+    background-repeat: no-repeat;
+    background-position: auto;
+}
+
+.main-nav {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: #81b3d2;
+}
+
+.advantages-item,
+.offers-item {
+    list-style: none;
+}
+
+
+/* .advantages-description {
+    text-align: center;
+} */
