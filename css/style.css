@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5c5c5c;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/background-index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
