@@ -9,11 +9,36 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("img/background-index.jpg");
-  background-position: top center;
+  background-image: url("../img/background-index.jpg");
   background-repeat: no-repeat;
+  background-size: 1200px 800px;
 }
 
 a {
   text-decoration: none;
+}
+.main-nav {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.nav-list,
+.main-header-logo {
+  list-style: none;
+}
+.nav-list a,
+.main-header-logo a {
+  color: #000000;
+}
+.main-header-logo a:focus,
+.nav-list a:focus,
+ {
+  background-color: #b2b2b2;
+}
+
+.nav-list a:hover,
+.main-header-logo a:hover {
+  background-color: #81b3d2;
 }
