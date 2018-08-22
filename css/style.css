@@ -13,6 +13,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.button {
+    text-transform: uppercase;   
+   }
 
 .container {
     background-image: url("../img/background-index.jpg");
@@ -63,7 +66,10 @@ a {
 .offers-item {
     list-style: none;
 }
-
+.advantages-item-blue, {
+    background-color: #81b3d2;
+    color:#ffffff;
+}
 .advantages-title,
 .offers-title {
     font-size: 21px;
@@ -88,9 +94,7 @@ a {
     line-height: 24px;
     color: #333333;
 }
-.button {
- text-transform: uppercase;   
-}
+
 .appointment-main-button {
     font-size: 21px;
     line-height: 26px;
@@ -118,6 +122,20 @@ a {
 .appointment {
     text-align: center;
 }
+
+.appointment-field {
+    font-size: 14px;
+    line-height: 26px; 
+    font-weight: 700;
+    color: #000000;
+}
+.appointment-form input::placeholder { 
+    font-size: 14px;
+    line-height: 26px; 
+    font-weight: 700;
+    color: #000000;
+}
+
 .footer {
     text-align: center;
 } 
@@ -131,22 +149,7 @@ a {
     line-height: 26px;
 }
 
-.appointment-field {
-    font-size: 14px;
-    line-height: 26px; 
-    font-weight: 700;
-    color: #000000;
-}
-input::placeholder { 
-    font-size: 14px;
-    line-height: 26px; 
-    font-weight: 700;
-    color: #000000;
-}
-.advantages-item-blue, {
-    background-color: #81b3d2;
-    color:#ffffff;
-}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
