@@ -82,7 +82,9 @@ a {
 .advantages-digit {
     color: #333333;
 }
-
+.appointment {
+    text-align: center;
+}
 .appointment-main-title {
     font-size: 30px;
     font-weight: 700;
@@ -119,17 +121,9 @@ a {
     background-color: #81b3d2;
     color: #ffffff;
 }
-.appointment {
-    text-align: center;
-}
 
-.appointment-field {
-    font-size: 14px;
-    line-height: 26px; 
-    font-weight: 700;
-    color: #000000;
-}
-.appointment-form input::placeholder { 
+.appointment-field,
+.appointment-field::placeholder { 
     font-size: 14px;
     line-height: 26px; 
     font-weight: 700;
