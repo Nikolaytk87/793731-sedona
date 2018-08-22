@@ -15,7 +15,6 @@ a {
 }
 
 .container {
-    background-color: #ffffff;
     background-image: url("../img/background-index.jpg");
     background-repeat: no-repeat;
     background-position: auto;
@@ -23,12 +22,13 @@ a {
 
 .main-nav {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 26px;
     color: #000000;
-    background-color: #ffffff;
 }
-
+.nav-list {
+    text-align: center;
+}
 .nav-list,
 .offers-list {
     list-style: none;
@@ -45,18 +45,18 @@ a {
 
 .main-caption {
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 26px;
     text-align: center;
-    background-color: #ffffff;
 }
 
+.advantages {
+    text-align: center;
+}
 .advantages-reasons {
     font-size: 14px;
     line-height: 26px;
-    text-align: center;
     color: #333333;
-    background-color: #ffffff;
 }
 
 .advantages-item,
@@ -67,53 +67,66 @@ a {
 .advantages-title,
 .offers-title {
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 21px;
 }
 
 .advantages-text,
 .offers-text,
 .advantages-digit {
-    font-size: 14px;
-    line-height: 21px;
     color: #333333;
 }
 
 .appointment-main-title {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 36px;
-    text-align: center;
 }
 
 .appointment-date {
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
     color: #333333;
 }
 
 .appointment-main-button {
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
     background-color: #766357;
     color: #ffffff;
     
 }
 .appointment-label,
 .appointment-inner,
-.appointment-label,
 .appointment-sign  {
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
 }
+
 .appointment-search {
     font-size: 21px;
     line-height: 26px; 
+    text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
+}
+.appointment {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+} 
+.footer-hashtag {
+    font-size: 21px;
+    line-height: 26px; 
+    font-weight: 700;
+}
+.footer-logo {
+    font-size: 14px;
+    line-height: 26px;
 }
 .visually-hidden {
     position: absolute;
