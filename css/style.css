@@ -110,6 +110,25 @@ a {
     text-align: center;
     background-color: #766357;
     color: #ffffff;
+    }
+    .appointment-main-button:hover {
+        background-color: #604e43;
+    }
+    .appointment-main-button:active {
+        background-color: #503e33;
+        color: rgba(255, 255, 255, 0.3);
+    }
+    .appointment-button {
+        color: #a9a9a9;
+ }
+    .appointment-button:hover {
+    color: #000000;
+}
+    .appointment-button:active {
+    color: #81b3d2;
+}
+.appointment-calendar {
+
     
 }
 .appointment-label,
@@ -126,6 +145,14 @@ a {
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
+    font-weight: 700;
+}
+.appointment-search:hover {
+    background-color: #669ec0;
+}
+.appointment-search:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .appointment-field,
@@ -133,6 +160,7 @@ a {
     font-size: 14px;
     line-height: 26px; 
     font-weight: 700;
+    text-transform: uppercase;
     color: #000000;
 }
 /* #########################
