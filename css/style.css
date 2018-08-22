@@ -93,6 +93,28 @@ a {
     color: #333333;
 }
 
+.appointment-main-button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    background-color: #766357;
+    color: #ffffff;
+    
+}
+.appointment-label,
+.appointment-inner,
+.appointment-label,
+.appointment-sign  {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.appointment-search {
+    font-size: 21px;
+    line-height: 26px; 
+    background-color: #81b3d2;
+    color: #ffffff;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;

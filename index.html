@@ -107,14 +107,14 @@
             <button class="appointment-main-button" type="button">Поиск гостиницы в Седоне</button>
             <form class="appointment-form" action="http://echo.htmlacademy.ru" method="POST">
                 <div class="appointment-item">
-                    <label for="appointment-date-entry">Дата заезда: </label>
+                    <label class="appointment-label" for="appointment-date-entry">Дата заезда: </label>
                     <input id="appointment-date-entry" type="text" name="date-entry" placeholder="24 апреля 2017" required>
                     <button class="appointment-calendar" type="button" aria-label="Календарь">
                         <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
                     </button>
                 </div>
                 <div class="appointment-item">
-                    <label for="appointment-date-leave">Дата заезда: </label>
+                    <label class="appointment-label"    for="appointment-date-leave">Дата заезда: </label>
                     <input id="appointment-date-leave" type="text" name="date-leave" placeholder="4 июля 2017" required>
                     <button class="appointment-calendar" type="button" aria-label="Календарь">
                         <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
@@ -122,23 +122,23 @@
                 </div>
                 <div class="appointment-visitor">
                     <div class="appointment-inner">
-                        <label for="count-grownup">Взрослые</label>
+                        <label class="appointment-label" for="count-grownup">Взрослые</label>
                         <button class="appointment-button" type="button" aria-label="Уменьшить">
-                            <span>-</span>
+                            <span class="appointment-sign">-</span>
                         </button>
                         <input class="appointment-count" type="text" name="count-grownup" placeholder="2" id="count-grownup">
                         <button class="appointment-button" type="button" aria-label="Увеличить">
-                            <span>+</span>
+                            <span class="appointment-sign">+</span>
                         </button>
                     </div>
                     <div class="appointment-inner">
-                        <label for="count-children">Дети</label>
+                        <label  class="appointment-label" for="count-children">Дети</label>
                         <button class="appointment-button" type="button" aria-label="Уменьшить">
-                            <span>-</span>
+                            <span class="appointment-sign">-</span>
                         </button>
                         <input class="appointment-count" type="text" name="count-children" placeholder="0" id="count-children">
                         <button class="appointment-button" type="button" aria-label="Увеличить">
-                            <span>+</span>
+                            <span class="appointment-sign">+</span>
                         </button>
                     </div>
                 </div>
