@@ -13,9 +13,10 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 .button {
-    text-transform: uppercase;   
-   }
+    text-transform: uppercase;
+}
 
 .container {
     background-image: url("../img/background-index.jpg");
@@ -29,9 +30,11 @@ a {
     line-height: 26px;
     color: #000000;
 }
+
 .nav-list {
     text-align: center;
 }
+
 .nav-list,
 .offers-list {
     list-style: none;
@@ -52,13 +55,16 @@ a {
     line-height: 26px;
     text-align: center;
 }
+
+
 /* #########################
-# СТИЛИ ДЛЯ БЛОКА ADVANTAGES 
+# СТИЛИ ДЛЯ БЛОКА ADVANTAGES
 ######################### */
 
 .advantages {
     text-align: center;
 }
+
 .advantages-reasons {
     font-size: 14px;
     line-height: 26px;
@@ -69,10 +75,19 @@ a {
 .offers-item {
     list-style: none;
 }
-.advantages-item-blue {
-    background-color: #81b3d2;
-    color:#ffffff;
+
+.advantages-description p {
+    color: #333333;
 }
+
+
+/* НЕ ПОЛУЧАЕТСЯ СДЕЛАТЬ СПЕЦИФИЧНОСТЬ ADVANTAGES-ITEM-BLUE */
+
+.advantages-item.advantages-item-blue {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
 .advantages-title,
 .offers-title {
     font-size: 21px;
@@ -80,17 +95,15 @@ a {
     line-height: 21px;
 }
 
-.advantages-text,
-.offers-text,
-.advantages-digit {
-    color: #333333;
-}
+
 /* #########################
-# СТИЛИ ДЛЯ БЛОКА APPOINTMENTS 
+# СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
 ######################### */
+
 .appointment {
     text-align: center;
 }
+
 .appointment-main-title {
     font-size: 30px;
     font-weight: 700;
@@ -110,30 +123,47 @@ a {
     text-align: center;
     background-color: #766357;
     color: #ffffff;
-    }
-    .appointment-main-button:hover {
-        background-color: #604e43;
-    }
-    .appointment-main-button:active {
-        background-color: #503e33;
-        color: rgba(255, 255, 255, 0.3);
-    }
-    .appointment-button {
-        color: #a9a9a9;
- }
-    .appointment-button:hover {
+}
+
+.appointment-main-button:hover,
+.appointment-main-button:focus {
+    background-color: #604e43;
+}
+
+.appointment-main-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.appointment-button {
+    color: #a9a9a9;
+}
+
+.appointment-button:hover,
+.appointment-button:focus {
     color: #000000;
 }
-    .appointment-button:active {
+
+.appointment-button:active {
     color: #81b3d2;
 }
-.appointment-calendar {
 
-    
+.appointment-calendar {
+    color: #ebebeb;
 }
+
+.appointment-calendar:hover,
+.appointment-calendar:focus {
+    color: #000000;
+}
+
+.appointment-calendar:active {
+    color: #81b3d2;
+}
+
 .appointment-label,
 .appointment-inner,
-.appointment-sign  {
+.appointment-sign {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -141,44 +171,88 @@ a {
 
 .appointment-search {
     font-size: 21px;
-    line-height: 26px; 
+    line-height: 26px;
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
     font-weight: 700;
 }
+
 .appointment-search:hover {
     background-color: #669ec0;
 }
+
 .appointment-search:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
 }
 
 .appointment-field,
-.appointment-field::placeholder { 
+.appointment-field::placeholder {
     font-size: 14px;
-    line-height: 26px; 
+    line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
+    background-color: #f2f2f2;
+    border: 2px solid #000000;
 }
+
+.appointment-field:hower {
+    background-color: #ebebeb;
+    border: 2px solid #000000;
+}
+
+.appointment-field:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+
 /* #########################
-# СТИЛИ ДЛЯ БЛОКА FOOTER 
+# СТИЛИ ДЛЯ БЛОКА FOOTER
 ######################### */
+
 .footer {
     text-align: center;
-} 
+}
+
 .footer-hashtag {
     font-size: 21px;
-    line-height: 26px; 
+    line-height: 26px;
     font-weight: 700;
 }
+
+.footer-item a {
+    background-color: #81b3d2;
+}
+
+.footer-item a:hower,
+.footer-item a:focus {
+    background-color: #669ec0;
+}
+
+.footer-item a:active {
+    background-color: #5496bd;
+}
+
 .footer-logo {
     font-size: 14px;
     line-height: 26px;
 }
 
+.footer-logo a {
+    color: #231f20;
+}
+
+.footer-logo a:hower,
+.footer-logo a:focus {
+    color: #81b3d2;
+}
+
+.footer-logo a:active {
+    color: #bdbbbc;
+}
 
 .visually-hidden {
     position: absolute;
