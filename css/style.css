@@ -200,7 +200,7 @@ a {
     border: 2px solid #000000;
 }
 
-.appointment-field:hower {
+.appointment-field:hover {
     background-color: #ebebeb;
     border: 2px solid #000000;
 }
@@ -240,7 +240,7 @@ a {
     background-color: #81b3d2;
 }
 
-.footer-item a:hower,
+.footer-item a:hover,
 .footer-item a:focus {
     background-color: #669ec0;
 }
@@ -258,7 +258,7 @@ a {
     color: #231f20;
 }
 
-.footer-logo a:hower,
+.footer-logo a:hover,
 .footer-logo a:focus {
     color: #81b3d2;
 }
