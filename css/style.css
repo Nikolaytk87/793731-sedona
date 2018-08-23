@@ -74,7 +74,7 @@ a {
 
 /* НЕ ПОЛУЧАЕТСЯ ADVANAGES-TITLE СДЕЛАТЬ ОТДЕЛЬНЫМ ОТ ADVANTAGES-DIGIT, ТАМ ДРУГОЙ ЦВЕТ */
 
-.advantages-list:not(.advantages-title),
+.advantages-list,
 .offers-item {
     list-style: none;
     color: #333333;
