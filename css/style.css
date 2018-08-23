@@ -71,19 +71,16 @@ a {
     color: #333333;
 }
 
-.advantages-item,
+
+/* НЕ ПОЛУЧАЕТСЯ ADVANAGES-TITLE СДЕЛАТЬ ОТДЕЛЬНЫМ ОТ ADVANTAGES-DIGIT, ТАМ ДРУГОЙ ЦВЕТ */
+
+.advantages-list:not(.advantages-title),
 .offers-item {
     list-style: none;
-}
-
-.advantages-description p {
     color: #333333;
 }
 
-
-/* НЕ ПОЛУЧАЕТСЯ СДЕЛАТЬ СПЕЦИФИЧНОСТЬ ADVANTAGES-ITEM-BLUE */
-
-.advantages-item.advantages-item-blue {
+.advantages-list .advantages-item-blue {
     background-color: #81b3d2;
     color: #ffffff;
 }
@@ -206,6 +203,17 @@ a {
 .appointment-field:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
+}
+
+
+/* #########################
+# Стили для страницы отелей/Cортировка
+######################### */
+
+.sort-list li {
+    font-size: 12px;
+    line-height: 18px;
+    color: #b2b2b2;
 }
 
 
