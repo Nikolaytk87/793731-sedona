@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Гостиницы</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,15 +23,15 @@
                     <a href="map.html">Карта штата</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-current" href="hotels.html">Гостиницы</a>
+                    <a class="nav-current">Гостиницы</a>
                 </li>
             </ul>
-            <a class="main-header-logo" href="index.html">
+            <a class="logo" href="index.html">
                 <img src="img/icons/logo-sedona.svg" alt="Логотип города Седона" width="140" height="71">
             </a>
         </nav>
     </header>
-    <main>
+    <main class="main-content">
         <h1 class="visually-hidden">Выбор Гостиниц</h1>
         <section class="filter">
             <form class="filter-form" action="http://echo.htmlacademy.ru" method="POST">
@@ -87,28 +88,30 @@
                         </div>
 
                     </div>
-                    <button class="filter-button" type="button" name="search"> Показать</button>
+                    <button class="filter-button button" type="submit" name="search"> Показать</button>
                 </fieldset>
             </form>
         </section>
         <section class="sort">
-            <b class="sort-bold">Найдено: 3</b>
-            <h2 class="sort-title">Сортировка:</h2>
+            <p class="sort-bold">Найдено: 3</p>
+            <p class="sort-title">Сортировка:</p>
             <ul class="sort-list">
                 <li class="sort-item">
-                    <a href="#">По цене</a>
+                    <a href="#" rel="nofollow">По цене</a>
                 </li>
                 <li class="sort-item">
-                    <a href="#">По типу</a>
+                    <a href="#" rel="nofollow">По типу</a>
                 </li>
                 <li class="sort-item">
-                    <a href="#">По рейтингу</a>
+                    <a href="#" rel="nofollow">По рейтингу</a>
                 </li>
-                <li class="sort-item">
-                    <a href="#">
+            </ul>
+            <ul classs="pointer">
+                <li class="pointer-item">
+                    <a href="#" rel="nofollow">
                         <img src="img/icons/icon-up-dir.svg" alt="указатель сортировки вверх" width="11" height="10">
                     </a>
-                    <a href="#">
+                    <a href="#" rel="nofollow">
                         <img src="img/icons/icon-down-dir.svg" alt="указатель сортировки вниз" width="11" height="10">
                     </a>
 
@@ -183,7 +186,7 @@
                     <div class="hotels-info">
                         <a href="hotels-item3.html">
                             <h3 class="hotels-title">
-                                Villas At Poco
+                                Villas At Poco Diablo
                             </h3>
                         </a>
                         <span class="hotels-type">Апартаменты</span>
@@ -206,26 +209,25 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="main-footer">
         <p class="footer-hashtag">
             #visitsedona
         </p>
-
-        <ul class="footer-list">
-            <li class="footer-item">
-                <a class="social-button" href="#twitter">Твиттер</a>
+        <ul class="socials">
+            <li class="socials-item">
+                <a class="social-link tw" href="#twitter">Твиттер</a>
             </li>
-            <li class="footer-item">
-                <a class="social-button" href="#facebook">Фэйсбук</a>
+            <li class="socials-item">
+                <a class="socials-link fb" href="#facebook">Фэйсбук</a>
             </li>
-            <li class="footer-item">
-                <a class="social-button" href="#youtube">Ютуб</a>
+            <li class="socials-item">
+                <a class="socials-link ytb" href="#youtube">Ютуб</a>
             </li>
         </ul>
-        <div class="footer-logo">
+        <div class="copyright">
             Website by
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/icons/logo-htmlacademy.svg" alt="HTML ACADEMY" width="115" height="41">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+                <img src="img/icons/logo-htmlacademy.svg" alt="html academy" width="115" height="41">
             </a>
         </div>
     </footer>

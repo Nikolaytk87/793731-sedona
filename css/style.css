@@ -1,0 +1,391 @@
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "PT Sans", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333333;
+        text-transform: uppercase;
+        background-color: #ffffff;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .button {
+        text-transform: uppercase;
+    }
+    
+    .promo {
+        background-image: url("../img/background-index.jpg");
+        background-repeat: no-repeat;
+        background-position: auto;
+    }
+    
+    .main-nav {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #000000;
+    }
+    
+    .main-caption {
+        color: #000000;
+    }
+    
+    .nav-list {
+        text-align: center;
+    }
+    
+    .nav-list,
+    .offers-list {
+        list-style: none;
+    }
+    
+    .nav-list a:hover,
+    .nav-list a:focus {
+        color: #81b3d2;
+    }
+    
+    .nav-list a:active {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .main-caption {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+    }
+    /* #########################
+# СТИЛИ ДЛЯ БЛОКА ADVANTAGES
+######################### */
+    
+    .advantages {
+        text-align: center;
+    }
+    
+    .advantages-reasons {
+        font-size: 14px;
+        line-height: 26px;
+        color: #333333;
+    }
+    
+    .advantages-list,
+    .offers-item {
+        list-style: none;
+    }
+    
+    .advantages-list .advantages-item-blue {
+        background-color: #81b3d2;
+        color: #ffffff;
+    }
+    
+    .advantages-title,
+    .offers-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 21px;
+        color: #000000;
+    }
+    /* #########################
+# СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
+######################### */
+    
+    .appointment {
+        text-align: center;
+        color: #000000;
+    }
+    
+    .appointment-main-title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    
+    .appointment-date {
+        font-size: 14px;
+        line-height: 24px;
+        color: #333333;
+    }
+    
+    .appointment-main-button {
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 700;
+        text-align: center;
+        background-color: #766357;
+        color: #ffffff;
+    }
+    
+    .appointment-main-button:hover,
+    .appointment-main-button:focus {
+        background-color: #604e43;
+    }
+    
+    .appointment-main-button:active {
+        background-color: #503e33;
+        color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .appointment-button {
+        color: #a9a9a9;
+    }
+    
+    .appointment-button:hover,
+    .appointment-button:focus {
+        color: #000000;
+    }
+    
+    .appointment-button:active {
+        color: #81b3d2;
+    }
+    
+    .appointment-calendar {
+        color: #ebebeb;
+    }
+    
+    .appointment-calendar:hover,
+    .appointment-calendar:focus {
+        color: #000000;
+    }
+    
+    .appointment-calendar:active {
+        color: #81b3d2;
+    }
+    
+    .appointment-label,
+    .appointment-inner,
+    .appointment-sign {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+    
+    .appointment-search {
+        font-size: 21px;
+        line-height: 26px;
+        text-align: center;
+        background-color: #81b3d2;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    
+    .appointment-search:hover {
+        background-color: #669ec0;
+    }
+    
+    .appointment-search:active {
+        background-color: #5496bd;
+        color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .appointment-field,
+    .appointment-field::placeholder {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000000;
+        background-color: #f2f2f2;
+        border: 2px solid #000000;
+    }
+    
+    .appointment-field:hover {
+        background-color: #ebebeb;
+        border: 2px solid #000000;
+    }
+    
+    .appointment-field:focus {
+        background-color: #ffffff;
+        border: 2px solid #e5e5e5;
+    }
+    /* #########################
+# Стили для страницы отелей/Фильтр отелей
+######################### */
+    
+    .filter-form {
+        background-image: url("../img/background-hotels.jpg");
+        background-repeat: no-repeat;
+        background-position: auto;
+    }
+    
+    .filter-group {
+        color: #ffffff;
+    }
+    
+    .filter-legend {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+    }
+    
+    .min-price,
+    .max-price {
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        background-color: #669ec0;
+    }
+    /* #########################
+# Стили для страницы отелей/Cортировка
+######################### */
+    
+    .hotels-list,
+    .sort-list,
+    .filter-list {
+        list-style: none;
+    }
+    
+    .sort-title {
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+    
+    .sort-bold {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #000000;
+    }
+    
+    .sort-item a {
+        font-size: 12px;
+        line-height: 18px;
+        color: #b2b2b2;
+    }
+    
+    .sort-item a:hover {
+        color: #81b3d2;
+    }
+    
+    .sort-item a:focus {
+        color: #000000;
+    }
+    
+    .sort-item a:active {
+        color: #000000;
+    }
+    
+    .hotels-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #000000;
+    }
+    
+    .hotels-title:hover,
+    .hotels-title:focus {
+        color: #81b3d2;
+    }
+    
+    .hotels-title:active {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .hotels-price a:first-of-type {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        color: #ffffff;
+        background-color: #81b3d2;
+    }
+    
+    .hotels-price a:first-of-type:hover,
+    .hotels-price a:first-of-type:focus {
+        background-color: #669ec0;
+    }
+    
+    .hotels-price a:first-of-type:active {
+        background-color: #5496bd;
+        color: rgba(148, 185, 210, 0.3);
+    }
+    
+    .hotels-price a:last-of-type {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        color: #ffffff;
+        background-color: #766357;
+    }
+    
+    .hotels-price a:last-of-type:hover,
+    .hotels-price a:last-of-type:focus {
+        background-color: #604e43;
+    }
+    
+    .hotels-price a:last-of-type:active {
+        background-color: #503e33;
+        color: rgba(105, 92, 84, 0.3);
+    }
+    
+    .rating-info {
+        color: #666666;
+    }
+    /* #########################
+# СТИЛИ ДЛЯ БЛОКА FOOTER
+######################### */
+    
+    .footer {
+        text-align: center;
+    }
+    
+    .footer-hashtag {
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+    
+    .socials-item a {
+        background-color: #81b3d2;
+    }
+    
+    .socials-item a:hover,
+    .socials-item a:focus {
+        background-color: #669ec0;
+    }
+    
+    .socials-item a:active {
+        background-color: #5496bd;
+    }
+    
+    .copyright {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    
+    .copyright a {
+        color: #231f20;
+    }
+    
+    .copyright a:hover,
+    .copyright a:focus {
+        color: #81b3d2;
+    }
+    
+    .copyright a:active {
+        color: #bdbbbc;
+    }
+    
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
