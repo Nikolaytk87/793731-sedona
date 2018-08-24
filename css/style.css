@@ -28,7 +28,7 @@
         text-transform: uppercase;
     }
     
-    .main-content {
+    .promo {
         background-image: url("../img/background-index.jpg");
         background-repeat: no-repeat;
         background-position: auto;
@@ -216,7 +216,7 @@
 # Стили для страницы отелей/Фильтр отелей
 ######################### */
     
-    .container-hotels {
+    .filter-form {
         background-image: url("../img/background-hotels.jpg");
         background-repeat: no-repeat;
         background-position: auto;
