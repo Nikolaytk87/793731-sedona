@@ -28,20 +28,10 @@
         text-transform: uppercase;
     }
     
-    .promo {
-        background-image: url("../img/background-index.jpg");
-        background-repeat: no-repeat;
-        background-position: auto;
-    }
-    
     .main-nav {
         font-size: 14px;
         font-weight: 700;
         line-height: 26px;
-        color: #000000;
-    }
-    
-    .main-caption {
         color: #000000;
     }
     
@@ -63,7 +53,8 @@
         color: rgba(0, 0, 0, 0.3);
     }
     
-    .main-caption {
+    .caption {
+        color: #000000;
         font-size: 21px;
         font-weight: 700;
         line-height: 26px;
@@ -388,4 +379,41 @@
         padding: 0;
         clip: rect(0 0 0 0);
         overflow: hidden;
+    }
+    /* Стили для сеток */
+    
+    .page-wrapper {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .main-header {
+        width: 1200px;
+    }
+    
+    header .main-nav {
+        display: flex;
+        width: 100%;
+    }
+    
+    header .main-nav li {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    
+    header .main-nav logo {
+        width: 140px;
+    }
+    
+    .promo {
+        text-align: center;
+        background-image: url(../img/polygon.png), url(../img/background-index.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom, top;
+        margin-bottom: 60px;
+    }
+    
+    .advantages-reasons {
+        margin: 0 auto;
+        margin-bottom: 26px;
     }
