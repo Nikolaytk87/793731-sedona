@@ -81,6 +81,7 @@
         
         .advantages-list .advantages-item-blue {
             background-color: #81b3d2;
+            background-size: 100%;
             color: #ffffff;
         }
         
@@ -494,7 +495,7 @@
         }
         
         .advantages-list li {
-            width: 100%;
+            width: 1200px;
             text-align: center;
         }
         
