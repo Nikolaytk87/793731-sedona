@@ -394,39 +394,30 @@
         /* Стили для сеток */
         
         .page-wrapper {
-            margin-left: 40px;
-            margin-right: 40px;
-        }
-        
-        .main-header {
-            max-width: 1200px;
+            width: 1200px;
+            margin: 0 auto;
         }
         
         .main-nav {
-            position: relative;
-            justify-content: space-between;
             display: flex;
+            position: relative;
             width: 100%;
         }
         
         .nav-list {
-            width: 1200px;
             display: flex;
             flex-wrap: nowrap;
-            /* justify-content: space-between; */
+            width: 100%;
             padding: 0;
             margin: 0;
         }
         
         .main-nav li {
-            width: 239px;
+            width: 100%;
             padding-top: 14px;
             padding-bottom: 14px
         }
-        
-        .nav-list li:first-child {
-            margin-left: 72px;
-        }
+        /* .nav-list li:first-child {} */
         
         .nav-list li:nth-child(3) {
             margin-left: auto;
@@ -463,8 +454,6 @@
         .caption {
             margin: 0;
             padding: 0;
-            margin-right: 370px;
-            margin-left: 370px;
             margin-bottom: 25px;
         }
         
