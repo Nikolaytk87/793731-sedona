@@ -537,9 +537,14 @@
         }
         
         .appointment-form {
-            flex-direction: column;
             display: flex;
+            width: 568px;
+            height: 395px;
+            flex-direction: column;
             margin: 0 auto;
+            background-color: #503e33;
+            align-items: space-between;
+            justify-content: space-between;
         }
         
         .appointment-main-button {
