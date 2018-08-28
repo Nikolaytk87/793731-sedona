@@ -535,3 +535,21 @@
         .reverse {
             flex-direction: row-reverse;
         }
+        
+        .appointment-form {
+            flex-direction: column;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        .appointment-main-button {
+            margin: 0 auto;
+            width: 700px;
+            height: 86px;
+        }
+        
+        .appointment-search {
+            margin: 0 auto;
+            width: 458px;
+            height: 58px;
+        }
