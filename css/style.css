@@ -386,11 +386,6 @@
             margin: 0 auto;
         }
         
-        .hotels-contaner {
-            width: 1056px;
-            margin: 0 auto;
-        }
-        
         .main-nav {
             display: flex;
             position: relative;
@@ -557,6 +552,19 @@
             margin-left: auto;
         }
         
+        .pointer {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
         .hotels-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
             margin-bottom: 120px;
+        }
+        
+        .hotels-image {
+            display: block;
         }
