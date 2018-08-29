@@ -28,6 +28,17 @@
             text-transform: uppercase;
         }
         
+        .socials,
+        .nav-list,
+        .offers-list,
+        .advantages-list,
+        .offers-item,
+        .hotels-list,
+        .sort-list,
+        .filter-list {
+            list-style: none;
+        }
+        
         .main-nav {
             font-size: 14px;
             font-weight: 700;
@@ -37,11 +48,6 @@
         
         .nav-list {
             text-align: center;
-        }
-        
-        .nav-list,
-        .offers-list {
-            list-style: none;
         }
         
         .nav-list a:hover,
@@ -58,7 +64,6 @@
             font-size: 21px;
             font-weight: 700;
             line-height: 26px;
-            text-align: center;
         }
         /* #########################
 # СТИЛИ ДЛЯ БЛОКА ADVANTAGES
@@ -74,23 +79,11 @@
             color: #333333;
         }
         
-        .advantages-list,
-        .offers-item {
-            list-style: none;
-        }
-        
-        .advantages-list .advantages-item-blue {
-            background-color: #81b3d2;
-            background-size: 100%;
-            color: #ffffff;
-        }
-        
         .advantages-title,
         .offers-title {
             font-size: 21px;
             font-weight: 700;
             line-height: 21px;
-            color: #000000;
         }
         
         .offers-text {
@@ -239,12 +232,6 @@
         /* #########################
 # Стили для страницы отелей/Cортировка
 ######################### */
-        
-        .hotels-list,
-        .sort-list,
-        .filter-list {
-            list-style: none;
-        }
         
         .sort-title {
             font-size: 12px;
@@ -408,30 +395,28 @@
             display: flex;
             flex-wrap: nowrap;
             width: 100%;
-            padding: 0;
+            padding: 0 72px;
             margin: 0;
         }
         
         .main-nav li {
-            width: 100%;
             padding-top: 14px;
             padding-bottom: 14px
         }
-        /* .nav-list li:first-child {} */
+        
+        .nav-list li:first-child {
+            margin-right: 146px;
+        }
         
         .nav-list li:nth-child(3) {
             margin-left: auto;
-            /* margin-right: 146px; */
-        }
-        
-        .nav-list li:last-child {
-            margin-right: 72px;
+            margin-right: 165px;
         }
         
         .logo img {
             position: absolute;
             left: 50%;
-            margin-left: -69px;
+            margin-left: -71px;
             width: 140px;
             z-index: 20
         }
@@ -452,52 +437,33 @@
         }
         
         .caption {
-            margin: 0;
+            width: 450px;
+            margin: 0 auto;
             padding: 0;
-            margin-bottom: 25px;
+            margin-bottom: 27px;
         }
         
-        .advantages .advantages-reasons {
+        .advantages-reasons {
             margin: 0;
-            margin-left: 20px;
             margin-bottom: 52px;
         }
         
-        .advantages .advantages-list {
+        .advantages-list {
             margin: 0;
             padding: 0;
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: space-around;
         }
         
         .advantages-content {
             display: flex;
-            margin-bottom: 137px;
+            background-color: #81b2d2;
+            color: #ffffff;
         }
         
-        .advantages-list .advantages-item-blue.reverse {
-            display: flex;
-            margin-top: 185px;
-        }
-        
-        .advantages-list li {
-            width: 1200px;
-            text-align: center;
-        }
-        
-        .advantages-item-blue:nth-child(1) {
-            margin-bottom: 144px;
-        }
-        
-        .advantages-item-blue {
-            height: 256px;
-            width: 400px;
-        }
-        
-        .advantages-preview {
+        .advantages-preview img {
+            display: block;
             width: 800px;
         }
         
@@ -505,20 +471,17 @@
             width: 400px;
         }
         
-        .advantages-item ul {
-            padding: 0;
-            width: 100%;
+        .offers-list {
             display: flex;
-            justify-content: center;
-            align-content: center;
+            padding: 0;
+            padding-top: 140px;
+            padding-bottom: 83px;
+            width: 100%;
         }
         
-        .advantages-list .grey {
+        .advantages-item:first-child {
             display: flex;
-            flex-direction: column;
-            width: 33.333%;
-            justify-content: space-between;
-            align-content: space-around;
+            flex-wrap: wrap;
         }
         
         .reverse {
@@ -527,13 +490,15 @@
         
         .appointment-form {
             display: flex;
+            flex-wrap: wrap;
             width: 568px;
             height: 395px;
-            flex-direction: column;
             margin: 0 auto;
             background-color: #503e33;
-            align-items: space-between;
-            justify-content: space-between;
+        }
+        
+        .appointment-visitor {
+            display: flex;
         }
         
         .appointment-main-button {
@@ -546,4 +511,142 @@
             margin: 0 auto;
             width: 458px;
             height: 58px;
+        }
+        /* Футер */
+        
+        .main-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        /* Сетки для 2 страницы */
+        
+        .filter-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            min-height: 200px;
+        }
+        
+        .sort {
+            display: flex;
+        }
+        
+        .filter-group {
+            border: 0 none;
+        }
+        
+        .filter-range {
+            width: 330px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        .filter-range-title {
+            margin-bottom: 9px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+        }
+        
+        .price-controls {
+            position: relative;
+            height: 36px;
+            margin-bottom: 20px;
+            font-size: 0;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+        }
+        
+        .price-controls::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 22px;
+            background: #ffffff;
+            transform: translate(-50%, -50%);
+        }
+        
+        .price-controls label {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 38px;
+            vertical-align: top;
+            cursor: pointer;
+        }
+        
+        .price-controls .min-price,
+        .price-controls .max-price {
+            width: 90px;
+            padding-left: 65px;
+        }
+        
+        .price-controls input {
+            width: 50px;
+            margin: 0;
+            color: inherit;
+            font: inherit;
+            background: none;
+            border: none;
+        }
+        
+        .range-controls {
+            position: relative;
+            margin-bottom: 32px;
+        }
+        
+        .range-controls .scale {
+            height: 2px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .range-controls .bar {
+            width: 80%;
+            height: 2px;
+            background: #ffffff;
+        }
+        
+        .range-toggle {
+            position: absolute;
+            top: -9px;
+            width: 4px;
+            height: 4px;
+            background: #ababab;
+            border: 8px solid #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            cursor: pointer;
+        }
+        
+        .range-toggle:hover {
+            background: #1c4f80;
+        }
+        
+        .range-toggle-min {
+            left: 0;
+        }
+        
+        .range-toggle-max {
+            left: 80%;
+        }
+        
+        .btn-transparent {
+            display: block;
+            margin: 0 auto;
+            padding: 6px 35px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            background: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        
+        .btn-transparent:hover {
+            color: #000000;
+            background: #ffffff;
         }
