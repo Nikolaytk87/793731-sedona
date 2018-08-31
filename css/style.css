@@ -90,18 +90,6 @@
         font-weight: 700;
         line-height: 21px;
     }
-    
-    .offers-text {
-        margin: 0;
-        color: #000000;
-        text-align: center;
-    }
-    
-    .offers-item {
-        padding-top: 100px;
-        margin: 0 auto;
-        width: 33.3%;
-    }
     /* #########################
 # СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
 ######################### */
@@ -531,23 +519,38 @@
         color: #ffffff;
     }
     
+    .advantages-title {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 47px;
+        width: 175px;
+    }
+    
+    .advantages-text {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 25px;
+        width: 285px;
+    }
+    
+    .advantages-digit {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    
     .advantages-preview {
-        width: 800px;
+        min-width: 800px;
     }
     
     .advantages-description {
         margin: 0 auto;
+        min-width: 400px;
     }
     
     .advantages-preview img {
         display: block;
         width: 800px;
-    }
-    
-    .advantages-title {
-        padding: 0;
-        margin: 0;
-        padding-top: 48px;
     }
     
     .offers-list {
@@ -559,6 +562,18 @@
     .offers-title {
         margin: 0;
         padding-top: 60px;
+    }
+    
+    .offers-text {
+        margin: 0;
+        color: #000000;
+        text-align: center;
+    }
+    
+    .offers-item {
+        padding-top: 61px;
+        margin: 0 auto;
+        width: 33.3%;
     }
     
     .house {
