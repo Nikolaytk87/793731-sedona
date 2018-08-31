@@ -338,26 +338,84 @@
         font-weight: 700;
     }
     
+    .main-footer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 120px;
+        max-width: 1200px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .footer-hashtag {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .socials-container {
+        width: 150px;
+        text-align: center;
+    }
+    
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 146px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .socials-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 48px;
+        background-color: #81b3d2;
+    }
+    
+    .socials-link:hover,
+    .socials-link:focus {
+        background-color: #669ec0;
+    }
+    
+    .socials-link:active {
+        background-color: #5496bd;
+    }
+    
+    .socials-link:active path {
+        opacity: 0.3;
+    }
+    
     .socials-item a {
         background-color: #81b3d2;
     }
     
-    .socials-item a:hover,
-    .socials-item a:focus {
-        background-color: #669ec0;
-    }
-    
-    .socials-item a:active {
-        background-color: #5496bd;
-    }
-    
     .copyright {
+        display: block;
+        margin-top: 43px;
         font-size: 14px;
         line-height: 26px;
     }
     
     .copyright a {
         color: #231f20;
+    }
+    
+    .copyright p {
+        display: inline-block;
+        margin: 0;
+    }
+    
+    .copyright img {
+        display: inline-block;
+        vertical-align: middle;
     }
     
     .copyright a:hover,
@@ -479,9 +537,33 @@
     .offers-list {
         display: flex;
         padding: 0;
-        padding-top: 140px;
-        padding-bottom: 83px;
         width: 100%;
+        margin-top: 160px;
+    }
+    
+    .offers-title {
+        margin: 0;
+    }
+    
+    .house {
+        background-image: url(../img/icons/icon-1.svg);
+        background-repeat: no-repeat;
+        background-position: 174px -62px;
+        background-size: 74px 70px;
+    }
+    
+    .food {
+        background-image: url(../img/icons/icon-2.svg);
+        background-repeat: no-repeat;
+        background-position: 174px -62px;
+        background-size: 74px 70px;
+    }
+    
+    .souvenirs {
+        background-image: url(../img/icons/icon-3.svg);
+        background-repeat: no-repeat;
+        background-position: 174px -62px;
+        background-size: 74px 70px;
     }
     
     .advantages-item:first-child {
@@ -520,70 +602,8 @@
     
     .map {
         position: relative;
-        margin-bottom: -100px;
-        z-index: 1;
     }
     /* Футер */
-    
-    .main-footer {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 135px;
-        padding-right: 29px;
-        position: relative;
-        z-index: 2;
-        background-color: rgba(255, 255, 255, 0.9);
-        margin-top: -100px;
-    }
-    
-    .footer-hashtag {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .socials-container {
-        width: 150px;
-        text-align: center;
-    }
-    
-    .socials {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 146px;
-        margin: 0 auto;
-        padding: 0;
-        list-style: none;
-    }
-    
-    .socials-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 46px;
-        height: 48px;
-        background-color: #81b3d2;
-    }
-    
-    .socials-link:hover,
-    .socials-link:focus {
-        background-color: #669ec0;
-    }
-    
-    .socials-link:active {
-        background-color: #5496bd;
-    }
-    
-    .socials-link:active path {
-        opacity: 0.3;
-    }
-    /* .copyright {
-        position: relative;
-        z-index: 20;
-    } */
     
     .filter-form {
         display: flex;
