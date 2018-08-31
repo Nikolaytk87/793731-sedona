@@ -96,6 +96,12 @@
         color: #000000;
         text-align: center;
     }
+    
+    .offers-item {
+        padding-top: 100px;
+        margin: 0 auto;
+        width: 33.3%;
+    }
     /* #########################
 # СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
 ######################### */
@@ -525,44 +531,55 @@
         color: #ffffff;
     }
     
+    .advantages-preview {
+        width: 800px;
+    }
+    
+    .advantages-description {
+        margin: 0 auto;
+    }
+    
     .advantages-preview img {
         display: block;
         width: 800px;
     }
     
-    .advantages-description {
-        width: 400px;
+    .advantages-title {
+        padding: 0;
+        margin: 0;
+        padding-top: 48px;
     }
     
     .offers-list {
         display: flex;
         padding: 0;
         width: 100%;
-        margin-top: 160px;
     }
     
     .offers-title {
         margin: 0;
+        padding-top: 60px;
     }
     
     .house {
         background-image: url(../img/icons/icon-1.svg);
         background-repeat: no-repeat;
-        background-position: 174px -62px;
+        background-position: center center;
+        ;
         background-size: 74px 70px;
     }
     
     .food {
-        background-image: url(../img/icons/icon-2.svg);
+        background-image: url(../img/icons/icon-3.svg);
         background-repeat: no-repeat;
-        background-position: 174px -62px;
+        background-position: center center;
         background-size: 74px 70px;
     }
     
     .souvenirs {
-        background-image: url(../img/icons/icon-3.svg);
+        background-image: url(../img/icons/icon-2.svg);
         background-repeat: no-repeat;
-        background-position: 174px -62px;
+        background-position: center center;
         background-size: 74px 70px;
     }
     
