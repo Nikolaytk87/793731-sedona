@@ -337,36 +337,35 @@
         font-size: 21px;
         line-height: 26px;
         font-weight: 700;
-    }
-    
-    .main-footer {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        width: 100%;
-        min-height: 120px;
-        max-width: 1200px;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-    
-    .footer-hashtag {
         margin: 0;
         padding: 0;
     }
     
+    .main-footer {
+        /* position: relative; */
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 124px;
+        padding-left: 107px;
+        width: 100%;
+        min-height: 120px;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
     .socials-container {
-        width: 150px;
+        width: 400px;
         text-align: center;
+        padding-left: 20px;
     }
     
     .socials {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 146px;
+        width: 150px;
         margin: 0 auto;
         padding: 0;
         list-style: none;
@@ -379,6 +378,7 @@
         width: 46px;
         height: 48px;
         background-color: #81b3d2;
+        list-style: none;
     }
     
     .socials-link:hover,
@@ -399,24 +399,24 @@
     }
     
     .copyright {
-        display: block;
-        margin-top: 43px;
-        font-size: 14px;
-        line-height: 26px;
-    }
-    
-    .copyright a {
-        color: #231f20;
+        display: flex;
+        margin: 0;
+        padding-top: 40px;
+        min-height: 120px;
+        /* justify-content: flex-end; */
+        width: 200px;
     }
     
     .copyright p {
-        display: inline-block;
-        margin: 0;
+        padding-right: 5px;
     }
     
-    .copyright img {
-        display: inline-block;
-        vertical-align: middle;
+    .copyright a:hover path {
+        fill: #81b3d2;
+    }
+    
+    .copyright a:active path {
+        fill: #c6c5c5;
     }
     
     .copyright a:hover,
@@ -668,7 +668,6 @@
     .map {
         position: relative;
     }
-    /* Футер */
     
     .filter-form {
         display: flex;
