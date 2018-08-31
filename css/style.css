@@ -95,7 +95,11 @@
 ######################### */
     
     .appointment {
+        position: relative;
+        margin: 0 auto;
+        min-height: 233px;
         text-align: center;
+        width: 100%;
         color: #000000;
     }
     
@@ -103,12 +107,15 @@
         font-size: 30px;
         font-weight: 700;
         line-height: 36px;
+        padding-top: 80px;
     }
     
     .appointment-date {
         font-size: 14px;
         line-height: 24px;
         color: #333333;
+        margin: 0 auto;
+        width: 400px;
     }
     
     .appointment-main-button {
@@ -509,27 +516,31 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        justify-content: space-around;
         display: flex;
         flex-wrap: wrap;
     }
     
     .advantages-content {
         display: flex;
+        justify-content: space-around;
         background-color: #81b2d2;
         color: #ffffff;
     }
     
     .advantages-title {
+        display: flex;
         padding: 0;
         margin: 0 auto;
         padding-top: 47px;
-        width: 175px;
+        padding-bottom: 4px;
+        width: 151px;
     }
     
     .advantages-text {
         padding: 0;
         margin: 0 auto;
-        padding-top: 25px;
+        padding-top: 27px;
         width: 285px;
     }
     
@@ -540,12 +551,13 @@
     }
     
     .advantages-preview {
-        min-width: 800px;
+        width: 800px;
     }
     
     .advantages-description {
+        text-align: center;
         margin: 0 auto;
-        min-width: 400px;
+        width: 400px;
     }
     
     .advantages-preview img {
@@ -561,17 +573,18 @@
     
     .offers-title {
         margin: 0;
-        padding-top: 60px;
+        padding-bottom: 22px;
     }
     
     .offers-text {
-        margin: 0;
+        margin: 0 auto;
         color: #000000;
-        text-align: center;
+        width: 300px;
     }
     
     .offers-item {
-        padding-top: 61px;
+        padding-top: 161px;
+        padding-bottom: 30px;
         margin: 0 auto;
         width: 33.3%;
     }
@@ -579,22 +592,21 @@
     .house {
         background-image: url(../img/icons/icon-1.svg);
         background-repeat: no-repeat;
-        background-position: center center;
-        ;
+        background-position: 163px 60px;
         background-size: 74px 70px;
     }
     
     .food {
         background-image: url(../img/icons/icon-3.svg);
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 163px 60px;
         background-size: 74px 70px;
     }
     
     .souvenirs {
         background-image: url(../img/icons/icon-2.svg);
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 164px 60px;
         background-size: 74px 70px;
     }
     
@@ -604,6 +616,7 @@
     }
     
     .reverse {
+        margin-top: 52px;
         flex-direction: row-reverse;
     }
     
@@ -613,7 +626,7 @@
         width: 568px;
         height: 395px;
         margin: 0 auto;
-        background-color: #503e33;
+        /* padding: 20px 50px; */
     }
     
     .appointment-visitor {
@@ -621,9 +634,29 @@
     }
     
     .appointment-main-button {
-        margin: 0 auto;
-        width: 700px;
-        height: 86px;
+        max-width: 570px;
+        width: 570px;
+        margin-top: 46px;
+        padding: 29px 0;
+        font-family: "PT Sans Bold", Arial, sans-serif;
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #766357;
+        border: none;
+    }
+    
+    .popup {
+        position: absolute;
+        bottom: -395px;
+        left: 50%;
+        z-index: 1;
+        width: 570px;
+        min-height: 397px;
+        margin-left: -285px;
+        text-align: center;
+        background-color: #fff;
     }
     
     .appointment-search {

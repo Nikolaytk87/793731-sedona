@@ -98,7 +98,7 @@
                                 <h3 class="offers-title ">Сувениры</h3>
 
                                 <p class="offers-text">
-                                    Не только китайского, но и местного производства
+                                    Не только китайского, но и местного производства!
                                 </p>
                             </li>
                         </ul>
@@ -138,7 +138,7 @@
                         <p class="advantages-digit">-№4-</p>
 
                         <p class="advantages-text">
-                            Ехать в Седону из Лас-Вегаса совсем не скучно
+                            Ехать в Седону из Лас-Вегаса совсем не скучно!
                         </p>
                     </li>
 
@@ -162,60 +162,61 @@
                 </p>
 
                 <button class="appointment-main-button button" type="button">Поиск гостиницы в Седоне</button>
+                <div class="popup">
+                    <form class="appointment-form" action="http://echo.htmlacademy.ru" method="POST">
+                        <div class="appointment-item">
+                            <label class="appointment-label" for="appointment-date-entry">Дата заезда:</label>
 
-                <form class="appointment-form" action="http://echo.htmlacademy.ru" method="POST">
-                    <div class="appointment-item">
-                        <label class="appointment-label" for="appointment-date-entry">Дата заезда:</label>
+                            <input class="appointment-field" id="appointment-date-entry" type="text" name="date-entry" placeholder="24 апреля 2017" required="required"></input>
 
-                        <input class="appointment-field" id="appointment-date-entry" type="text" name="date-entry" placeholder="24 апреля 2017" required="required"></input>
-
-                        <button class="appointment-calendar" type="button" aria-label="Календарь">
-                            <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
-                        </button>
-                    </div>
-
-                    <div class="appointment-item">
-                        <label class="appointment-label" for="appointment-date-leave">Дата заезда:</label>
-
-                        <input class="appointment-field" id="appointment-date-leave" type="text" name="date-leave" placeholder="4 июля 2017" required="required"></input>
-
-                        <button class="appointment-calendar" type="button" aria-label="Календарь">
-                            <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
-                        </button>
-                    </div>
-
-                    <div class="appointment-visitor">
-                        <div class="appointment-inner">
-                            <label class="appointment-label" for="count-grownup">Взрослые</label>
-
-                            <button class="appointment-button button" type="button" aria-label="Уменьшить">
-                                <span class="appointment-sign">-</span>
-                            </button>
-
-                            <input class="appointment-field" type="text" name="count-grownup" placeholder="2" id="count-grownup"></input>
-
-                            <button class="appointment-button button" type="button" aria-label="Увеличить">
-                                <span class="appointment-sign">+</span>
+                            <button class="appointment-calendar" type="button" aria-label="Календарь">
+                                <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
                             </button>
                         </div>
 
-                        <div class="appointment-inner">
-                            <label class="appointment-label" for="count-children">Дети</label>
+                        <div class="appointment-item">
+                            <label class="appointment-label" for="appointment-date-leave">Дата заезда:</label>
 
-                            <button class="appointment-button button" type="button" aria-label="Уменьшить">
-                                <span class="appointment-sign">-</span>
-                            </button>
+                            <input class="appointment-field" id="appointment-date-leave" type="text" name="date-leave" placeholder="4 июля 2017" required="required"></input>
 
-                            <input class="appointment-field" type="text" name="count-children" placeholder="0" id="count-children"></input>
-
-                            <button class="appointment-button button" type="button" aria-label="Увеличить">
-                                <span class="appointment-sign">+</span>
+                            <button class="appointment-calendar" type="button" aria-label="Календарь">
+                                <img src="img/icons/calendar.svg" alt="Календарь" width="21" height="22">
                             </button>
                         </div>
-                    </div>
 
-                    <button class="appointment-search button" type="submit">Найти</button>
-                </form>
+                        <div class="appointment-visitor">
+                            <div class="appointment-inner">
+                                <label class="appointment-label" for="count-grownup">Взрослые</label>
+
+                                <button class="appointment-button button" type="button" aria-label="Уменьшить">
+                                    <span class="appointment-sign">-</span>
+                                </button>
+
+                                <input class="appointment-field" type="text" name="count-grownup" placeholder="2" id="count-grownup"></input>
+
+                                <button class="appointment-button button" type="button" aria-label="Увеличить">
+                                    <span class="appointment-sign">+</span>
+                                </button>
+                            </div>
+
+                            <div class="appointment-inner">
+                                <label class="appointment-label" for="count-children">Дети</label>
+
+                                <button class="appointment-button button" type="button" aria-label="Уменьшить">
+                                    <span class="appointment-sign">-</span>
+                                </button>
+
+                                <input class="appointment-field" type="text" name="count-children" placeholder="0" id="count-children"></input>
+
+                                <button class="appointment-button button" type="button" aria-label="Увеличить">
+                                    <span class="appointment-sign">+</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button class="appointment-search button" type="submit">Найти</button>
+                    </form>
+                </div>
             </section>
 
             <div class="20">
