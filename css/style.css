@@ -69,6 +69,66 @@
         font-size: 21px;
         font-weight: 700;
         line-height: 26px;
+        width: 450px;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 27px;
+    }
+    
+    .page-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .main-nav {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0 72px;
+        margin: 0;
+    }
+    
+    .main-nav li {
+        padding-top: 14px;
+        padding-bottom: 14px
+    }
+    
+    .nav-list li:first-child {
+        margin-right: 146px;
+    }
+    
+    .nav-list li:nth-child(3) {
+        margin-left: auto;
+        margin-right: 165px;
+    }
+    
+    .logo img {
+        position: absolute;
+        left: 50%;
+        margin-left: -71px;
+        width: 140px;
+        z-index: 2
+    }
+    
+    .promo {
+        width: 1200px;
+        position: relative;
+        min-height: 510px;
+        text-align: center;
+        background: url(../img/polygon.png) no-repeat bottom, url(../img/background-index.jpg) no-repeat 50% 22% scroll;
+        margin-bottom: 60px;
+        z-index: 1
+    }
+    
+    .promo-image {
+        display: inline-block;
+        margin-top: 76px;
     }
     /* #########################
 # СТИЛИ ДЛЯ БЛОКА ADVANTAGES
@@ -76,6 +136,119 @@
     
     .advantages {
         text-align: center;
+    }
+    
+    .advantages-reasons {
+        margin: 0;
+        margin-bottom: 52px;
+    }
+    
+    .advantages-list {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .advantages-content {
+        display: flex;
+        justify-content: space-around;
+        background-color: #81b2d2;
+        color: #ffffff;
+    }
+    
+    .advantages-title {
+        display: flex;
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 47px;
+        padding-bottom: 6px;
+        width: 151px;
+    }
+    
+    .advantages-text {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 305px;
+    }
+    
+    .advantages-digit {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    
+    .advantages-preview {
+        width: 800px;
+    }
+    
+    .advantages-description {
+        text-align: center;
+        margin: 0 auto;
+        width: 400px;
+    }
+    
+    .advantages-preview img {
+        display: block;
+        width: 800px;
+    }
+    
+    .offers-list {
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .offers-title {
+        margin: 0;
+        padding-bottom: 24px;
+    }
+    
+    .offers-text {
+        margin: 0 auto;
+        color: #000000;
+        width: 305px;
+    }
+    
+    .offers-item {
+        padding-top: 161px;
+        padding-bottom: 30px;
+        margin: 0 auto;
+        width: 33.333%;
+    }
+    
+    .house {
+        background-image: url(../img/icons/icon-1.svg);
+        background-repeat: no-repeat;
+        background-position: 163px 60px;
+        background-size: 74px 70px;
+    }
+    
+    .food {
+        background-image: url(../img/icons/icon-3.svg);
+        background-repeat: no-repeat;
+        background-position: 163px 60px;
+        background-size: 74px 70px;
+    }
+    
+    .souvenirs {
+        background-image: url(../img/icons/icon-2.svg);
+        background-repeat: no-repeat;
+        background-position: 164px 60px;
+        background-size: 74px 70px;
+    }
+    
+    .advantages-item:first-child {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .reverse {
+        margin-top: 52px;
+        flex-direction: row-reverse;
     }
     
     .advantages-reasons {
@@ -90,6 +263,10 @@
         font-weight: 700;
         line-height: 21px;
     }
+    
+    .map {
+        position: relative;
+    }
     /* #########################
 # СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
 ######################### */
@@ -103,7 +280,23 @@
         color: #000000;
     }
     
+    .appointment-main-title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        padding-top: 84px;
+    }
+    
+    .appointment-date {
+        font-size: 14px;
+        line-height: 24px;
+        color: #333333;
+        margin: 0 auto;
+        width: 400px;
+    }
+    
     .appointment-popup {
+        display: flex;
         position: absolute;
         bottom: -395px;
         left: 50%;
@@ -121,13 +314,12 @@
         width: 568px;
         height: 395px;
         margin: 0 auto;
-        padding: 51px 60px;
+        padding: 56px 57px;
         justify-content: space-between;
     }
     
     .appointment-field {
         width: 346px;
-        flex-grow: 1;
         margin-left: auto;
         padding-top: 8px;
         padding-left: 15px;
@@ -138,6 +330,7 @@
         text-transform: uppercase;
         border: none;
         background-color: #f2f2f2;
+        font-weight: 700;
     }
     
     .appointment-field::placeholder {
@@ -152,48 +345,47 @@
     .appointment-field:hover {
         background-color: #ebebeb;
         border: 2px solid #000000;
+        font-weight: 700;
     }
     
     .appointment-field:focus {
         background-color: #ffffff;
         border: 2px solid #e5e5e5;
+        font-weight: 700;
     }
     
-    .appointment-label {}
+    .appointment-field+.calendar {
+        position: absolute;
+        right: 8px;
+        width: 21px;
+        height: 22px;
+    }
+    
+    .calendar path {
+        fill: #cacaca;
+    }
+    
+    .calendar:hover path,
+    .calendar:focus path {
+        fill: #000000;
+    }
+    
+    .calendar:active path {
+        fill: #81b3d2;
+    }
     
     .appointment-main-button {
         max-width: 570px;
         width: 570px;
         margin-top: 47px;
         padding: 32px 0;
-        font-family: "PT Sans Bold", Arial, sans-serif;
+        font-family: "PT Sans", Arial, sans-serif;
         font-size: 21px;
         line-height: 26px;
         font-weight: 700;
         color: #fff;
         background-color: #766357;
         border: none;
-    }
-    
-    .appointment-search {
-        margin: 0 auto;
-        width: 458px;
-        height: 58px;
-    }
-    
-    .appointment-main-title {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 36px;
-        padding-top: 80px;
-    }
-    
-    .appointment-date {
-        font-size: 14px;
-        line-height: 24px;
-        color: #333333;
-        margin: 0 auto;
-        width: 400px;
     }
     
     .appointment-main-button {
@@ -215,8 +407,23 @@
         color: rgba(255, 255, 255, 0.3);
     }
     
+    .appointment-inner .appointment-field,
     .appointment-button {
+        width: 38px;
+        height: 38px;
+        border: none;
+    }
+    
+    .appointment-button {
+        position: relative;
         color: #a9a9a9;
+        width: 38px;
+        height: 38px;
+        background-color: #f2f2f2;
+        color: #a9a9a9;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: inherit;
     }
     
     .appointment-button:hover,
@@ -228,21 +435,31 @@
         color: #81b3d2;
     }
     
-    .appointment-calendar {
-        color: #ebebeb;
-    }
-    
-    .appointment-calendar:hover,
-    .appointment-calendar:focus {
-        color: #000000;
-    }
-    
-    .appointment-calendar:active {
-        color: #81b3d2;
+    .appointment-item {
+        position: relative;
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 100%;
+        vertical-align: middle;
+        margin-bottom: 31px;
     }
     
     .appointment-visitor {
         display: flex;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .children {
+        padding-right: 27px;
+        padding-left: 53px;
+    }
+    
+    .grownup {
+        padding-right: 40px;
     }
     
     .appointment-label,
@@ -253,7 +470,18 @@
         font-weight: 700;
     }
     
+    .appointment-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 100%;
+        margin-bottom: 54px
+    }
+    
     .appointment-search {
+        margin: 0 auto;
+        width: 100%;
+        height: 58px;
         font-size: 21px;
         line-height: 26px;
         text-align: center;
@@ -261,8 +489,7 @@
         color: #ffffff;
         font-weight: 700;
         border: none;
-        padding: 0;
-        margin: 0;
+        padding: 16px 0;
     }
     
     .appointment-search:hover,
@@ -390,318 +617,7 @@
     .rating-info {
         color: #666666;
     }
-    /* #########################
-# СТИЛИ ДЛЯ БЛОКА FOOTER
-######################### */
-    
-    .hotels-footer {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 97px;
-        padding-left: 132px;
-        width: 100%;
-        min-height: 120px;
-        max-width: 1200px;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-    
-    .footer-hashtag {
-        font-size: 21px;
-        line-height: 26px;
-        font-weight: 700;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .main-footer {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 97px;
-        padding-left: 132px;
-        width: 100%;
-        min-height: 120px;
-        max-width: 1200px;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.9);
-        z-index: 2;
-        margin-top: -128px;
-    }
-    
-    .socials-container {
-        width: 400px;
-        text-align: center;
-        padding-left: 20px;
-    }
-    
-    .socials {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 150px;
-        margin: 0 auto;
-        padding: 0;
-        list-style: none;
-    }
-    
-    .socials-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 46px;
-        height: 48px;
-        background-color: #81b3d2;
-        list-style: none;
-    }
-    
-    .socials-link:hover,
-    .socials-link:focus {
-        background-color: #669ec0;
-    }
-    
-    .socials-link:active {
-        background-color: #5496bd;
-    }
-    
-    .socials-link:active path {
-        opacity: 0.3;
-    }
-    
-    .socials-item a {
-        background-color: #81b3d2;
-    }
-    
-    .copyright {
-        display: flex;
-        margin: 0;
-        padding-top: 37px;
-        min-height: 120px;
-        /* justify-content: flex-end; */
-        width: 200px;
-    }
-    
-    .copyright p {
-        padding-right: 8px;
-    }
-    
-    .copyright a:hover path {
-        fill: #81b3d2;
-    }
-    
-    .copyright a:active path {
-        fill: #c6c5c5;
-    }
-    
-    .copyright a:hover,
-    .copyright a:focus {
-        color: #81b3d2;
-    }
-    
-    .copyright a:active {
-        color: #bdbbbc;
-    }
-    
-    .visually-hidden:not(:focus):not(:active),
-    input[type="checkbox"].visually-hidden,
-    input[type="radio"].visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
     /* Стили для сеток */
-    
-    .page-wrapper {
-        width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .main-nav {
-        display: flex;
-        position: relative;
-        width: 100%;
-    }
-    
-    .nav-list {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        padding: 0 72px;
-        margin: 0;
-    }
-    
-    .main-nav li {
-        padding-top: 14px;
-        padding-bottom: 14px
-    }
-    
-    .nav-list li:first-child {
-        margin-right: 146px;
-    }
-    
-    .nav-list li:nth-child(3) {
-        margin-left: auto;
-        margin-right: 165px;
-    }
-    
-    .logo img {
-        position: absolute;
-        left: 50%;
-        margin-left: -71px;
-        width: 140px;
-        z-index: 2
-    }
-    
-    .promo {
-        width: 1200px;
-        position: relative;
-        min-height: 510px;
-        text-align: center;
-        background: url(../img/polygon.png) no-repeat bottom, url(../img/background-index.jpg) no-repeat 50% 22% scroll;
-        margin-bottom: 60px;
-        z-index: 1
-    }
-    
-    .promo-image {
-        display: inline-block;
-        margin-top: 76px;
-    }
-    
-    .caption {
-        width: 450px;
-        margin: 0 auto;
-        padding: 0;
-        margin-bottom: 27px;
-    }
-    
-    .advantages-reasons {
-        margin: 0;
-        margin-bottom: 52px;
-    }
-    
-    .advantages-list {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        justify-content: space-around;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .advantages-content {
-        display: flex;
-        justify-content: space-around;
-        background-color: #81b2d2;
-        color: #ffffff;
-    }
-    
-    .advantages-title {
-        display: flex;
-        padding: 0;
-        margin: 0 auto;
-        padding-top: 47px;
-        padding-bottom: 4px;
-        width: 151px;
-    }
-    
-    .advantages-text {
-        padding: 0;
-        margin: 0 auto;
-        padding-top: 27px;
-        width: 285px;
-    }
-    
-    .advantages-digit {
-        padding: 0;
-        margin: 0 auto;
-        padding-top: 20px;
-    }
-    
-    .advantages-preview {
-        width: 800px;
-    }
-    
-    .advantages-description {
-        text-align: center;
-        margin: 0 auto;
-        width: 400px;
-    }
-    
-    .advantages-preview img {
-        display: block;
-        width: 800px;
-    }
-    
-    .offers-list {
-        display: flex;
-        padding: 0;
-        width: 100%;
-    }
-    
-    .offers-title {
-        margin: 0;
-        padding-bottom: 22px;
-    }
-    
-    .offers-text {
-        margin: 0 auto;
-        color: #000000;
-        width: 300px;
-    }
-    
-    .offers-item {
-        padding-top: 161px;
-        padding-bottom: 30px;
-        margin: 0 auto;
-        width: 33.3%;
-    }
-    
-    .house {
-        background-image: url(../img/icons/icon-1.svg);
-        background-repeat: no-repeat;
-        background-position: 163px 60px;
-        background-size: 74px 70px;
-    }
-    
-    .food {
-        background-image: url(../img/icons/icon-3.svg);
-        background-repeat: no-repeat;
-        background-position: 163px 60px;
-        background-size: 74px 70px;
-    }
-    
-    .souvenirs {
-        background-image: url(../img/icons/icon-2.svg);
-        background-repeat: no-repeat;
-        background-position: 164px 60px;
-        background-size: 74px 70px;
-    }
-    
-    .advantages-item:first-child {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .reverse {
-        margin-top: 52px;
-        flex-direction: row-reverse;
-    }
-    
-    .map {
-        position: relative;
-    }
     
     .filter-form {
         display: flex;
@@ -748,4 +664,139 @@
     
     .hotels-image {
         display: block;
+    }
+    /* #########################
+# СТИЛИ ДЛЯ БЛОКА FOOTER
+######################### */
+    /* .hotels-footer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 97px;
+        padding-left: 132px;
+        width: 100%;
+        min-height: 120px;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+    } */
+    
+    .footer-hashtag {
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 700;
+        margin: 0;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .main-footer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 97px;
+        padding-left: 132px;
+        width: 100%;
+        min-height: 120px;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 2;
+        margin-top: -125px;
+    }
+    
+    .socials-container {
+        width: 400px;
+        text-align: center;
+        padding-left: 20px;
+        padding-bottom: 8px;
+    }
+    
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 150px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .socials-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 48px;
+        background-color: #81b3d2;
+        list-style: none;
+    }
+    
+    .socials-link:hover,
+    .socials-link:focus {
+        background-color: #669ec0;
+    }
+    
+    .socials-link:active {
+        background-color: #5496bd;
+    }
+    
+    .socials-link:active path {
+        opacity: 0.3;
+    }
+    
+    .socials-item a {
+        background-color: #81b3d2;
+    }
+    
+    .copyright {
+        display: flex;
+        margin: 0;
+        padding-top: 33px;
+        min-height: 120px;
+        width: 200px;
+    }
+    
+    .copyright a path {
+        fill: #000000;
+    }
+    
+    .copyright p {
+        padding-right: 8px;
+    }
+    
+    .copyright a:hover path {
+        fill: #81b3d2;
+    }
+    
+    .copyright a:active path {
+        fill: #c6c5c5;
+    }
+    
+    .copyright a:hover,
+    .copyright a:focus {
+        color: #81b3d2;
+    }
+    
+    .copyright a:active {
+        color: #bdbbbc;
+    }
+    
+    .visually-hidden:not(:focus):not(:active),
+    input[type="checkbox"].visually-hidden,
+    input[type="radio"].visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
     }
