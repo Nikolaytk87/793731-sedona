@@ -103,6 +103,84 @@
         color: #000000;
     }
     
+    .appointment-popup {
+        position: absolute;
+        bottom: -395px;
+        left: 50%;
+        z-index: 1;
+        width: 570px;
+        min-height: 397px;
+        margin-left: -285px;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    .appointment-form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 568px;
+        height: 395px;
+        margin: 0 auto;
+        padding: 51px 60px;
+        justify-content: space-between;
+    }
+    
+    .appointment-field {
+        width: 346px;
+        flex-grow: 1;
+        margin-left: auto;
+        padding-top: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 7px;
+        font: inherit;
+        color: #000000;
+        text-transform: uppercase;
+        border: none;
+        background-color: #f2f2f2;
+    }
+    
+    .appointment-field::placeholder {
+        font: inherit;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #000000;
+        text-transform: uppercase;
+    }
+    
+    .appointment-field:hover {
+        background-color: #ebebeb;
+        border: 2px solid #000000;
+    }
+    
+    .appointment-field:focus {
+        background-color: #ffffff;
+        border: 2px solid #e5e5e5;
+    }
+    
+    .appointment-label {}
+    
+    .appointment-main-button {
+        max-width: 570px;
+        width: 570px;
+        margin-top: 47px;
+        padding: 32px 0;
+        font-family: "PT Sans Bold", Arial, sans-serif;
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #766357;
+        border: none;
+    }
+    
+    .appointment-search {
+        margin: 0 auto;
+        width: 458px;
+        height: 58px;
+    }
+    
     .appointment-main-title {
         font-size: 30px;
         font-weight: 700;
@@ -163,6 +241,10 @@
         color: #81b3d2;
     }
     
+    .appointment-visitor {
+        display: flex;
+    }
+    
     .appointment-label,
     .appointment-inner,
     .appointment-sign {
@@ -178,36 +260,19 @@
         background-color: #81b3d2;
         color: #ffffff;
         font-weight: 700;
+        border: none;
+        padding: 0;
+        margin: 0;
     }
     
-    .appointment-search:hover {
+    .appointment-search:hover,
+    .appointment-search:focus {
         background-color: #669ec0;
     }
     
     .appointment-search:active {
         background-color: #5496bd;
         color: rgba(255, 255, 255, 0.3);
-    }
-    
-    .appointment-field,
-    .appointment-field::placeholder {
-        font-size: 14px;
-        line-height: 26px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #000000;
-        background-color: #f2f2f2;
-        border: 2px solid #000000;
-    }
-    
-    .appointment-field:hover {
-        background-color: #ebebeb;
-        border: 2px solid #000000;
-    }
-    
-    .appointment-field:focus {
-        background-color: #ffffff;
-        border: 2px solid #e5e5e5;
     }
     /* #########################
 # Стили для страницы отелей/Фильтр отелей
@@ -329,8 +394,19 @@
 # СТИЛИ ДЛЯ БЛОКА FOOTER
 ######################### */
     
-    .footer {
+    .hotels-footer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 97px;
+        padding-left: 132px;
+        width: 100%;
+        min-height: 120px;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
     }
     
     .footer-hashtag {
@@ -621,51 +697,6 @@
     .reverse {
         margin-top: 52px;
         flex-direction: row-reverse;
-    }
-    
-    .appointment-form {
-        display: flex;
-        flex-wrap: wrap;
-        width: 568px;
-        height: 395px;
-        margin: 0 auto;
-        /* padding: 20px 50px; */
-    }
-    
-    .appointment-visitor {
-        display: flex;
-    }
-    
-    .appointment-main-button {
-        max-width: 570px;
-        width: 570px;
-        margin-top: 47px;
-        padding: 32px 0;
-        font-family: "PT Sans Bold", Arial, sans-serif;
-        font-size: 21px;
-        line-height: 26px;
-        font-weight: 700;
-        color: #fff;
-        background-color: #766357;
-        border: none;
-    }
-    
-    .popup {
-        position: absolute;
-        bottom: -395px;
-        left: 50%;
-        z-index: 1;
-        width: 570px;
-        min-height: 397px;
-        margin-left: -285px;
-        text-align: center;
-        background-color: #fff;
-    }
-    
-    .appointment-search {
-        margin: 0 auto;
-        width: 458px;
-        height: 58px;
     }
     
     .map {
