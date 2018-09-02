@@ -605,72 +605,82 @@
     }
     /* сложная форма */
     
-    .filter-range {
-        width: 330px;
-        color: #ffffff;
-        text-transform: uppercase;
-        margin-left: 232px;
+    .form-price {
+        display: block;
+        width: 317px;
+        margin-left: auto;
         margin-top: 30px;
     }
     
-    .filter-range-title {
-        margin-bottom: 9px;
-        font-weight: 600;
+    .form-title {
+        display: block;
+        padding-left: 1px;
         font-size: 16px;
         line-height: 21px;
+        font-weight: 700;
+        color: #ffffff;
     }
     
-    .price-controls {
+    .range-text {
         position: relative;
-        height: 36px;
-        margin-bottom: 20px;
-        font-size: 0;
-        border: 2px solid #ffffff;
-        border-radius: 2px;
+        display: block;
+        width: 317px;
+        height: 35px;
+        background-color: transparent;
+        border: solid 2px #ffffff;
+        margin-top: 10px;
     }
     
-    .price-controls::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 2px;
-        height: 22px;
-        background: #ffffff;
-        transform: translate(-50%, -50%);
-    }
-    
-    .price-controls label {
-        display: inline-block;
+    .range-text label {
+        width: 150px;
+        position: relative;
+        top: 5px;
         font-size: 14px;
-        line-height: 38px;
-        vertical-align: top;
-        cursor: pointer;
+        line-height: 21px;
+        font-weight: 400px;
+        color: #eceded;
     }
     
-    .price-controls .min-price,
-    .price-controls .max-price {
+    .range-text input {
+        width: 50px;
+        margin: 0;
+        background: none;
+        border: none;
+        color: inherit;
+        font: inherit;
+    }
+    
+    .price-min {
+        display: inline-block;
         width: 90px;
         padding-left: 65px;
     }
     
-    .price-controls input {
-        width: 50px;
-        margin: 0;
-        color: inherit;
-        font: inherit;
-        background: none;
-        border: none;
+    .price-max {
+        display: inline-block;
+        width: 90px;
+        padding-left: 55px;
+    }
+    
+    .price-min::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 157px;
+        top: 0;
+        width: 2px;
+        height: 22px;
+        background-color: #ffffff;
     }
     
     .range-controls {
         position: relative;
-        margin-bottom: 32px;
     }
     
     .range-controls .scale {
         height: 2px;
         background: rgba(255, 255, 255, 0.3);
+        margin-top: 22px;
     }
     
     .range-controls .bar {
@@ -679,47 +689,82 @@
         background: #ffffff;
     }
     
-    .range-toggle {
+    .range-toggle-min:before {
         position: absolute;
-        top: -9px;
+        content: "";
         width: 4px;
         height: 4px;
-        background: #ababab;
+        border-radius: 50%;
+        background-color: #ababab;
+    }
+    
+    .range-toggle-min {
+        position: relative;
+        content: "";
+        width: 20px;
+        height: 20px;
         border: 8px solid #ffffff;
         border-radius: 50%;
+        -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
         box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        left: 0;
+        top: -10px;
         cursor: pointer;
+    }
+    
+    .range-toggle-min:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+    
+    .range-toggle-max {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 8px solid #ffffff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        left: 80%;
+        top: -10px;
+        cursor: pointer;
+    }
+    
+    .range-toggle-max:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
     }
     
     .range-toggle:hover {
         background: #1c4f80;
     }
     
-    .range-toggle-min {
-        left: 0;
-    }
-    
-    .range-toggle-max {
-        left: 80%;
-    }
-    
-    .btn-transparent {
-        display: block;
-        margin: 0 auto;
-        padding: 6px 35px;
-        font-size: 14px;
-        line-height: 20px;
-        color: #ffffff;
+    .price-button {
+        width: 135px;
+        height: 35px;
         text-transform: uppercase;
-        background: transparent;
-        border: 2px solid #ffffff;
-        border-radius: 2px;
-        cursor: pointer;
+        border: solid 2px #ffffff;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        margin: 12px 0 0px 85px;
     }
     
-    .btn-transparent:hover {
+    .price-button:hover {
+        background-color: #ffffff;
         color: #000000;
-        background: #ffffff;
     }
     /* #########################
 # Стили для страницы отелей/Cортировка
