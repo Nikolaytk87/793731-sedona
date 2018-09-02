@@ -558,11 +558,109 @@
             line-height: 21px;
         }
         
-        .min-price,
-        .max-price {
-            border: 2px solid #ffffff;
+        .filter-title {
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 700;
             color: #ffffff;
-            background-color: #669ec0;
+        }
+        
+        .filter-interval {
+            font-size: 0;
+            font-weight: 400;
+            color: #ffffff;
+            position: relative;
+            height: 36px;
+            margin-bottom: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+        }
+        
+        .filter-interval::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 22px;
+            background: #ffffff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .filter-range {
+            position: relative;
+            margin-bottom: 32px;
+        }
+        
+        .filter-range .filter-range-scale {
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .filter-range .filter-range-bar {
+            width: 80%;
+            height: 2px;
+            background: #ffffff;
+        }
+        
+        .filter-range-handle {
+            position: absolute;
+            top: -9px;
+            left: -6px;
+        }
+        
+        .max {
+            left: 75%;
+        }
+        
+        .filter-interval label {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 38px;
+            vertical-align: top;
+            width: 90px;
+            padding-left: 65px;
+        }
+        
+        .filter-interval input[type="text"] {
+            font: inherit;
+            border: none;
+            color: #ffffff;
+            background-color: transparent;
+            width: 50px;
+            margin: 0;
+        }
+        
+        .filter-range-handle {
+            background-color: transparent;
+            border: none;
+        }
+        
+        .filter-range-handle:hover svg,
+        .filter-range-handle:focus svg {
+            width: 22px;
+            height: 24px;
+        }
+        
+        .show-results {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            padding: 6px 35px;
+        }
+        
+        .show-results:hover,
+        .show-results:focus {
+            color: #000000;
+            background: #ffffff;
         }
         /* #########################
 # Стили для страницы отелей/Cортировка
@@ -578,6 +676,7 @@
         .sort-list {
             display: flex;
             justify-content: flex-start;
+            color: rgba(0, 0, 0, 0.3);
         }
         
         .sort-bold {
@@ -593,6 +692,10 @@
             line-height: 18px;
             color: #000000;
             padding-left: 47px;
+        }
+        
+        .switcher {
+            list-style: none;
         }
         
         .sort-item {
@@ -626,15 +729,32 @@
             color: #000000;
         }
         
-        .switcher {
-            padding-left: 500px;
-        }
-        
         .hotels {
             display: flex;
             width: 1200px;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
+        }
+        
+        .hotels-rating {
+            margin-left: auto;
+        }
+        
+        .hotels-list {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 120px;
+        }
+        
+        .hotels-item {
+            display: flex;
+        }
+        
+        .hotels-image {
+            display: block;
         }
         
         .hotels-title {
@@ -703,26 +823,6 @@
         
         .filter-group {
             border: 0 none;
-        }
-        
-        .hotels-item {
-            display: flex;
-            margin: 0;
-        }
-        
-        .hotels-rating {
-            margin-left: auto;
-        }
-        
-        .hotels-list {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            margin-bottom: 120px;
-        }
-        
-        .hotels-image {
-            display: block;
         }
         /* #########################
 # СТИЛИ ДЛЯ БЛОКА FOOTER
