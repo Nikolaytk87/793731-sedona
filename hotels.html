@@ -102,22 +102,18 @@
                         <a href="#" rel="nofollow">По рейтингу</a>
                     </li>
                 </ul>
-                <ul class="switcher">
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
-                <path class="up" fill="#231F20" d="M5.5 0L0 10h11z"/>
+                <div class="switcher">
+                    <a class="switcher-up" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                <path  fill="#231F20" d="M5.5 0L0 10h11z"/>
               </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
-                <path class="down current" fill="#231F20" d="M5.5 10L0 0h11"/>
+                    </a>
+                    <a class="switcher-down switcher-current" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                <path  fill="#231F20" d="M5.5 10L0 0h11"/>
               </svg>
-                        </a>
-                    </li>
-                </ul>
+                    </a>
+                </div>
             </section>
             <section class="hotels">
                 <h2 class="visually-hidden">Список Отелей</h2>
@@ -134,15 +130,11 @@
                                     Amara Resort & SPA
                                 </h3>
                             </a>
-                            <div class="hotels-more">
-                                <p class="hotels-type">Гостиница</p>
-                                <a class="button" href="#">Подробнее</a>
+                            <span class="hotels-type">Гостиница</span>
+                            <span class="hotels-cost">от 4000 Р.</span>
+                            <a class=" hotels-more button" href="#">Подробнее</a>
+                            <a class=" hotels-book button" href="#">Забронировать</a>
 
-                            </div>
-                            <div class="hotels-price">
-                                <p class="hotels-cost">от 4000 Р.</p>
-                                <a class="button" href="#">Забронировать</a>
-                            </div>
                         </div>
 
                         <div class="hotels-rating">
@@ -154,7 +146,9 @@
                                     <span class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewbox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
                                 </p>
                             </div>
-                            <p class="rating-info">Рейтинг: 8,5</p>
+                            <div class="rating-info">
+                                <span>Рейтинг: 8,5</span>
+                            </div>
                         </div>
 
                     </li>
@@ -170,15 +164,11 @@
                                     Desert Quail INN
                                 </h3>
                             </a>
-                            <div class="hotels-more">
-                                <p class="hotels-type">Мотель</p>
-                                <a class="button" href="#">Подробнее</a>
-                            </div>
+                            <span class="hotels-type">Мотель</span>
+                            <span class="hotels-cost">от 3000 Р.</span>
+                            <a class=" hotels-more button" href="#">Подробнее</a>
+                            <a class="hotels-book button" href="#">Забронировать</a>
 
-                            <div class="hotels-price">
-                                <p class="hotels-cost">от 3000 Р.</p>
-                                <a class="button" href="#">Забронировать</a>
-                            </div>
                         </div>
 
                         <div class="hotels-rating">
@@ -206,14 +196,12 @@
                                     Villas At Poco Diablo
                                 </h3>
                             </a>
-                            <div class="hotels-more">
-                                <p class="hotels-type">Апартаменты</p>
-                                <a class="button" href="#">Подробнее</a>
-                            </div>
-                            <div class="hotels-price">
-                                <p class="hotels-cost">от 2000 Р.</p>
-                                <a class="button" href="#">Забронировать</a>
-                            </div>
+                            <span class="hotels-type">Апартаменты</span>
+                            <span class="hotels-cost">от 2000 Р.</span>
+                            <a class="hotels-more  button" href="#">Подробнее</a>
+                            <a class="hotels-book button" href="#">Забронировать</a>
+
+
                         </div>
 
                         <div class="hotels-rating">
