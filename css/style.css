@@ -913,6 +913,10 @@ a {
 
 /* Отели */
 
+.hotels {
+    margin-bottom: 3px;
+}
+
 .hotels-list {
     display: flex;
     padding: 0;
