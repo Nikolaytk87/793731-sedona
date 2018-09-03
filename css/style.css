@@ -542,19 +542,22 @@
     .filter {
         border: none;
         margin: 0;
-        margin-bottom: 1px;
     }
     
     .filter-form {
         background-image: url("../img/background-hotels.jpg");
         background-repeat: no-repeat;
         display: flex;
-        min-height: 204px;
-        padding-left: 70px;
-        padding-right: 70px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        padding: 27px 72px 31px 72px;
     }
     
     .filter-group {
+        margin: 0;
+        padding: 0;
         color: #ffffff;
         border: none;
     }
@@ -564,55 +567,90 @@
         font-weight: 700;
         line-height: 21px;
         color: #ffffff;
-        padding-top: 29px;
-    }
-    
-    .filter-infrastructure {
-        width: 241px;
-        min-height: 204px;
         padding: 0;
     }
     
-    .infrastructure {
+    .filter-item input {
+        position: absolute;
+        opacity: 0;
+        width: 23px;
+        height: 25px;
+        top: 0;
+        left: 0;
+    }
+    
+    .filter-item label {
+        display: block;
+        position: relative;
+        padding-left: 40px;
+    }
+    
+    .filter-item label::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 27px;
+        width: 27px;
+        background-image: url(../img/icons/checkbox-off.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .filter-checkbox:checked+.filter-label::before {
+        background-image: url(../img/icons/checkbox-on.svg);
+    }
+    
+    .filter-checkbox:disabled+.filter-label::before {
+        background-image: url(../img/icons/checkbox-off.svg);
+    }
+    
+    .filter-infrastructure {
+        width: 250px;
+    }
+    
+    .filter-infrastructure ul {
         font-size: 14px;
         line-height: 21px;
         color: #ffffff;
         list-style: none;
-        padding: 0;
+        padding: 24px 0 0 0;
         margin: 0;
-        margin: 25px 0;
     }
     
-    .filter-item {
-        margin-top: 25px;
-        margin-left: 20px;
+    .filter-infrastructure li {
+        display: block;
+        position: relative;
+        padding-bottom: 25px;
     }
     
     .filter-houses {
-        width: 288px;
+        width: 250px;
         min-height: 204px;
-        padding: 0;
     }
     
-    .houses {
-        padding: 0;
-        margin: 25px 0;
-        margin-left: 15px;
+    .filter-houses ul {
+        padding: 24px 0 0 6px;
+        margin: 0;
     }
     
     .house-title {
-        margin-left: 10px;
+        margin-left: 5px;
+    }
+    
+    .filter-houses li {
+        display: block;
+        padding-bottom: 25px;
+        position: relative;
     }
     /* сложная форма */
     
-    .form-price {
+    .filter-price {
         display: block;
         width: 317px;
         margin-left: auto;
-        margin-top: 30px;
     }
     
-    .form-title {
+    .filter-title {
         display: block;
         padding-left: 1px;
         font-size: 16px;
