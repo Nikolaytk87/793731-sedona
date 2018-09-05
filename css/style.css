@@ -146,12 +146,12 @@ a {
 }
 
 .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 100%;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 55px;
 }
 
 .advantages-content {
@@ -164,21 +164,19 @@ a {
     display: flex;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 6px;
+    margin-bottom: 23px;
     width: 151px;
 }
 
-.advantages-text {
-    padding: 0;
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 305px;
+.advantages-number {
+    margin: 0;
+    margin-bottom: 20px;
 }
 
-.advantages-digit {
-    padding: 0;
-    margin: 0 auto;
-    padding-top: 20px;
+.grey {
+    background-color: #eeeeee;
+    width: 33.333%;
+    padding: 50px 60px 40px;
 }
 
 .advantages-preview {
@@ -204,40 +202,36 @@ a {
 
 .offers-title {
     margin: 0;
-    padding-bottom: 24px;
+    padding-bottom: 10px;
 }
 
 .offers-text {
-    margin: 0 auto;
     color: #000000;
-    width: 305px;
 }
 
 .offers-item {
-    padding-top: 161px;
-    padding-bottom: 30px;
-    margin: 0 auto;
     width: 33.333%;
+    padding: 160px 50px 67px;
 }
 
 .house {
     background-image: url(../img/icons/icon-1.svg);
     background-repeat: no-repeat;
-    background-position: 163px 60px;
+    background-position: center 60px;
     background-size: 74px 70px;
 }
 
 .food {
     background-image: url(../img/icons/icon-3.svg);
     background-repeat: no-repeat;
-    background-position: 163px 60px;
+    background-position: center 60px;
     background-size: 74px 70px;
 }
 
 .souvenirs {
     background-image: url(../img/icons/icon-2.svg);
     background-repeat: no-repeat;
-    background-position: 164px 60px;
+    background-position: center 60px;
     background-size: 74px 70px;
 }
 
@@ -247,7 +241,6 @@ a {
 }
 
 .reverse {
-    margin-top: 52px;
     flex-direction: row-reverse;
 }
 
@@ -286,7 +279,6 @@ a {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    padding-top: 84px;
 }
 
 .appointment-date {
@@ -321,18 +313,32 @@ a {
 }
 
 .appointment-field {
+    position: relative;
+    background-color: #f2f2f2;
     width: 346px;
-    margin-left: auto;
-    padding-top: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 7px;
-    font: inherit;
-    color: #000000;
+    height: 40px;
+    padding-left: 13px;
+    padding-right: 30px;
     text-transform: uppercase;
-    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    border: 2px solid transparent;
     background-color: #f2f2f2;
     font-weight: 700;
+}
+
+.appointment-count {
+    width: 38px;
+    height: 38px;
+    border: 2px solid transparent;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
 }
 
 .appointment-field::placeholder {
@@ -356,14 +362,17 @@ a {
     font-weight: 700;
 }
 
-.appointment-field+.calendar {
+.calendar {
     position: absolute;
-    right: 8px;
-    width: 21px;
-    height: 22px;
+    border: none;
+    top: 7px;
+    right: 2px;
+    outline: 0;
+    background-color: transparent;
 }
 
-.calendar path {
+
+/* .calendar path {
     fill: #cacaca;
 }
 
@@ -374,7 +383,7 @@ a {
 
 .calendar:active path {
     fill: #81b3d2;
-}
+} */
 
 .appointment-main-button {
     max-width: 570px;
