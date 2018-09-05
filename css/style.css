@@ -846,7 +846,6 @@ a {
     justify-content: space-between;
     width: 33px;
     list-style: none;
-    margin-left: auto;
     margin-top: 5px;
 }
 
@@ -914,7 +913,11 @@ a {
 
 .hotels {
     margin-bottom: 3px;
-    padding-left: 72px;
+}
+
+.hotels-image img {
+    width: 135px;
+    height: 90px;
 }
 
 .hotels-list {
@@ -928,9 +931,10 @@ a {
 .hotels-item {
     width: 100%;
     display: flex;
-    align-items: center;
     border-bottom: 1px solid #e5e5e5;
-    min-height: 151px;
+    padding-left: 72px;
+    padding-right: 30px;
+    padding-top: 24px;
 }
 
 .hotels-image {
@@ -942,7 +946,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 300px;
-    height: 90px;
     padding-left: 30px;
 }
 
