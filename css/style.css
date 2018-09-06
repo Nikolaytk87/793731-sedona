@@ -933,13 +933,18 @@ a {
     padding-left: 72px;
     padding-right: 72px;
     padding-top: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 34px;
 }
 
 .hotels-image {
     width: 135px;
     height: 90px;
     margin-right: 32px;
+}
+
+.left-col span,
+.right-col span {
+    display: block;
 }
 
 .hotels-info {
