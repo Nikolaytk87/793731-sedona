@@ -437,6 +437,11 @@ a {
     border: none;
 }
 
+.appointment-field:hover+.calendar path,
+.appointment-field:focus+.calendar path {
+    fill: #000000;
+}
+
 .appointment-button {
     position: relative;
     color: #a9a9a9;
@@ -941,9 +946,9 @@ a {
 }
 
 .hotels-item:nth-child(3) {
-    padding-top: 25px;
+    padding-top: 26px;
     padding-bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 
 .hotels-item {
