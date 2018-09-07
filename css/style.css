@@ -383,7 +383,7 @@ a {
     font-weight: 700;
 }
 
-.calendar {
+.appointment-calendar {
     position: absolute;
     border: none;
     top: 7px;
@@ -392,16 +392,16 @@ a {
     background-color: transparent;
 }
 
-.calendar path {
+.appointment-calendar path {
     fill: #cacaca;
 }
 
-.calendar:hover path,
-.calendar:focus path {
+.appointment-calendar:hover path,
+.appointment-calendar:focus path {
     fill: #000000;
 }
 
-.calendar:active path {
+.appointment-calendar:active path {
     fill: #81b3d2;
 }
 
@@ -437,8 +437,8 @@ a {
     border: none;
 }
 
-.appointment-field:hover+.calendar path,
-.appointment-field:focus+.calendar path {
+.appointment-field:hover+.appointment-calendar path,
+.appointment-field:focus+.appointment-calendar path {
     fill: #000000;
 }
 
