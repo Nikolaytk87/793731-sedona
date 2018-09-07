@@ -282,7 +282,6 @@ a {
 .appointment {
     position: relative;
     margin: 0 auto;
-    min-height: 233px;
     text-align: center;
     width: 100%;
     color: #000000;
@@ -1163,12 +1162,12 @@ a {
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.9);
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 36px;
     padding-left: 133px;
     padding-right: 100px;
     z-index: 2;
-    margin-top: -120px;
+    margin-top: -128px;
 }
 
 .socials-container {
