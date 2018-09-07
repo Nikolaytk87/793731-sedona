@@ -20,8 +20,8 @@ body {
 }
 
 .page-wrapper {
-    width: 1200px;
     margin: 0 auto;
+    width: 1200px;
     background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
@@ -73,12 +73,12 @@ a {
 }
 
 .caption {
-    color: #000000;
+    margin: 0 auto;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
     width: 450px;
-    margin: 0 auto;
+    color: #000000;
     padding: 0;
     margin-bottom: 27px;
 }
@@ -112,20 +112,20 @@ a {
 }
 
 .logo {
+    margin-left: -71px;
     position: absolute;
     left: 50%;
-    margin-left: -71px;
     width: 140px;
     z-index: 2
 }
 
 .promo {
+    margin-bottom: 60px;
     width: 1200px;
     position: relative;
     min-height: 510px;
     text-align: center;
     background: url(../img/background-index.jpg) no-repeat 50% 22% scroll;
-    margin-bottom: 60px;
     z-index: 1
 }
 
@@ -141,8 +141,8 @@ a {
 }
 
 .promo-image {
-    display: inline-block;
     margin-top: 76px;
+    display: inline-block;
 }
 
 
@@ -187,12 +187,6 @@ a {
     margin-bottom: 20px;
 }
 
-.grey {
-    background-color: #eeeeee;
-    width: 33.333%;
-    padding: 50px 60px 40px;
-}
-
 .advantages-preview {
     width: 800px;
 }
@@ -206,6 +200,12 @@ a {
 .advantages-preview img {
     display: block;
     width: 800px;
+}
+
+.grey {
+    background-color: #eeeeee;
+    width: 33.333%;
+    padding: 50px 60px 40px;
 }
 
 .offers-list {
@@ -399,26 +399,18 @@ a {
 }
 
 .appointment-main-button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
     max-width: 570px;
     width: 570px;
     margin-top: 45px;
     padding: 32px 0;
     font-family: "PT Sans", Arial, sans-serif;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #fff;
     background-color: #766357;
-    border: none;
-}
-
-.appointment-main-button {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
     text-align: center;
-    background-color: #766357;
     color: #ffffff;
+    border: none;
 }
 
 .appointment-main-button:hover,
