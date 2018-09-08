@@ -1174,6 +1174,7 @@ a {
     background-color: #f2f2f2;
     height: 27px;
     line-height: 27px;
+    margin-top: auto;
 }
 
 .rating-stars {
@@ -1196,7 +1197,6 @@ a {
     justify-content: flex-end;
     width: 110px;
     margin-left: auto;
-    margin-top: auto;
 }
 
 .rating-stars li:not(:last-child) {
@@ -1223,7 +1223,7 @@ a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.9);
-    padding-top: 36px;
+    padding-top: 33px;
     padding-bottom: 38px;
     padding-left: 133px;
     padding-right: 100px;
