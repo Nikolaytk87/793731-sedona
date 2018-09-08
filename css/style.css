@@ -335,7 +335,7 @@ a {
 .appointment-popup {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: none;
     position: absolute;
     bottom: -395px;
     left: 50%;
@@ -345,6 +345,10 @@ a {
     margin-left: -285px;
     text-align: center;
     background-color: #fff;
+}
+
+.modal-show {
+    display: flex;
 }
 
 .appointment-form {
