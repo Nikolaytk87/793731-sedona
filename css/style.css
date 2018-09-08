@@ -354,7 +354,7 @@ a {
     width: 568px;
     height: 395px;
     margin: 0 auto;
-    padding: 57px 57px;
+    padding: 54px 57px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -364,7 +364,7 @@ a {
     position: relative;
     background-color: #f2f2f2;
     width: 346px;
-    height: px;
+    height: 38px;
     padding-left: 13px;
     padding-right: 30px;
     text-transform: uppercase;
@@ -574,7 +574,7 @@ a {
     align-items: center;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 }
 
 .appointment-visitor {
