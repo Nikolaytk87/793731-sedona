@@ -378,6 +378,10 @@ a {
     font-weight: 700;
 }
 
+input::-ms-clear {
+    display: none;
+}
+
 .appointment-count {
     width: 38px;
     height: 38px;
@@ -505,7 +509,6 @@ a {
 
 .appointment-button {
     position: relative;
-    color: #a9a9a9;
     width: 38px;
     height: 38px;
     background-color: #f2f2f2;
@@ -574,8 +577,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    width: 100%;
     margin-bottom: 27px;
 }
 
@@ -590,13 +592,17 @@ a {
     width: 100%;
 }
 
-.children {
-    padding-right: 27px;
-    padding-left: 53px;
+.grownup {
+    margin-right: 37px;
 }
 
-.grownup {
-    padding-right: 40px;
+.children {
+    margin-right: 28px;
+    margin-left: 56px;
+}
+
+.appointment-item label {
+    margin-right: 11px;
 }
 
 .appointment-label,
@@ -1250,10 +1256,10 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 380px;
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-right: 227px;
 }
 
 .socials-link {
