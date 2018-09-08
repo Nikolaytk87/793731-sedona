@@ -63,12 +63,12 @@ a {
     text-align: center;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
+.nav-list a:not(.nav-current):hover,
+.nav-list a:not(.nav-current):focus {
     color: #81b3d2;
 }
 
-.nav-list a:active {
+.nav-list a:not(.nav-current):active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -124,7 +124,7 @@ a {
 }
 
 .promo {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     width: 1200px;
     position: relative;
     min-height: 510px;
@@ -169,7 +169,7 @@ a {
     margin: 0;
     padding: 0;
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 }
 
 .advantages-content {
@@ -504,15 +504,14 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-basis: 100%;
-    vertical-align: middle;
     margin-bottom: 27px;
 }
 
 .appointment-visitor {
     display: flex;
-    margin: 0;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 54px;
+    width: 100%;
 }
 
 .children {
@@ -534,10 +533,9 @@ a {
 
 .appointment-inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-basis: 100%;
-    margin-bottom: 54px
+    flex-basis: 50%;
+    margin-right: auto;
 }
 
 .appointment-search {
@@ -877,14 +875,9 @@ a {
 }
 
 .switcher-up path:hover,
-.switcher-down path:hover,
 .switcher-up path:focus,
 .switcher-down path:focus {
     fill: #231f20;
-}
-
-.switcher-down path:active {
-    fill: #81b2d2;
 }
 
 .switcher-up path:active {
@@ -946,10 +939,8 @@ a {
     padding-top: 26px;
 }
 
-.hotels-item:nth-child(3) {
+.hotels-item:last-child {
     padding-top: 26px;
-    padding-bottom: 0;
-    margin-bottom: 31px;
 }
 
 .hotels-item {
@@ -1065,21 +1056,23 @@ a {
     text-align: center;
     width: 100%;
     background-color: #f2f2f2;
+    height: 27px;
+    line-height: 27px;
 }
 
 .rating-stars {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-left: auto;
-    margin-bottom: 50px;
 }
 
 .hotels-rating-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     width: 110px;
     margin-left: auto;
+    margin-top: auto;
 }
 
 .rating-stars li:not(:last-child) {
