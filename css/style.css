@@ -87,7 +87,7 @@ a {
     width: 450px;
     color: #000000;
     padding: 0;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 }
 
 .main-nav {
@@ -180,7 +180,7 @@ a {
     margin: 0;
     padding: 0;
     width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 52px;
 }
 
 .advantages-content {
@@ -224,7 +224,7 @@ a {
 .grey {
     background-color: #eeeeee;
     width: 33.333%;
-    padding: 50px 60px 40px;
+    padding: 50px 60px 45px;
 }
 
 .offers-list {
@@ -432,12 +432,12 @@ a {
 .appointment-field:hover,
 .appointment-count:hover {
     background-color: #ebebeb;
-    border: 2px solid #000000;
     font-weight: 700;
 }
 
 .appointment-field:focus,
 .appointment-count:focus {
+    outline: none;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     font-weight: 700;
