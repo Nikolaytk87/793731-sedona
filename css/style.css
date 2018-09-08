@@ -138,6 +138,7 @@ a {
     min-height: 510px;
     text-align: center;
     background: url(../img/background-index.jpg) no-repeat 50% 22% scroll;
+    background-color: #387099;
     z-index: 1
 }
 
@@ -155,6 +156,7 @@ a {
 .promo-image {
     margin-top: 76px;
     display: inline-block;
+    vertical-align: top;
 }
 
 
@@ -653,6 +655,7 @@ a {
 
 .filter-form {
     background-image: url("../img/background-hotels.jpg");
+    background-color: #487ca5;
     background-repeat: no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -794,12 +797,14 @@ a {
 
 .price-min {
     display: inline-block;
+    vertical-align: top;
     width: 90px;
     padding-left: 65px;
 }
 
 .price-max {
     display: inline-block;
+    vertical-align: top;
     width: 90px;
     padding-left: 55px;
 }
