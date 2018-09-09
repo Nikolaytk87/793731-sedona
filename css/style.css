@@ -307,6 +307,7 @@ a {
 
 .map iframe {
     position: absolute;
+    border: none;
     z-index: 2;
 }
 
