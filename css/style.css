@@ -137,7 +137,7 @@ a {
     position: relative;
     min-height: 510px;
     text-align: center;
-    background: url(../img/background-index.jpg) no-repeat 50% 22% scroll;
+    background: url('../img/background-index.jpg') no-repeat 50% 22% scroll;
     background-color: #387099;
     z-index: 1
 }
@@ -149,7 +149,7 @@ a {
     top: 454px;
     height: 59px;
     width: 1200px;
-    background-image: url(../img/icons/intro-mask.svg);
+    background-image: url('../img/icons/intro-mask.svg');
     background-repeat: no-repeat;
 }
 
@@ -305,6 +305,16 @@ a {
     margin-bottom: -125px;
 }
 
+.map iframe {
+    position: absolute;
+    z-index: 2;
+}
+
+.map img {
+    position: relative;
+    z-index: 1;
+}
+
 
 /* #########################
   # СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
@@ -339,16 +349,131 @@ a {
     position: absolute;
     bottom: -395px;
     left: 50%;
-    z-index: 1;
+    z-index: 3;
     width: 570px;
     min-height: 397px;
     margin-left: -285px;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .modal-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-animation: bounce 0.6s;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    -webkit-animation: shake 1s;
+    animation: shake 1s;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translateY(-60px);
+        transform: translateY(-60px);
+    }
+    40% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    50% {
+        -webkit-transform: translateY(-35px);
+        transform: translateY(-35px);
+        opacity: 0.5;
+    }
+    70% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translateY(-60px);
+        transform: translateY(-60px);
+    }
+    40% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    50% {
+        -webkit-transform: translateY(-35px);
+        transform: translateY(-35px);
+        opacity: 0.5;
+    }
+    70% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
 }
 
 .appointment-form {
@@ -708,6 +833,10 @@ input::-ms-clear {
     width: 27px;
     background-image: url(../img/icons/checkbox-off.svg);
     background-repeat: no-repeat;
+}
+
+.filter-checkbox:focus+label {
+    outline: 1px solid #4d90fe;
 }
 
 .filter-checkbox:checked+.filter-label::before {
@@ -1242,7 +1371,7 @@ input::-ms-clear {
     padding-bottom: 41px;
     padding-left: 133px;
     padding-right: 100px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .footer-hashtag {

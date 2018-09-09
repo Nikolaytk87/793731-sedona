@@ -1,20 +1,25 @@
 var link = document.querySelector(".appointment-main-button");
 var popup = document.querySelector(".appointment-popup");
+var form = document.querySelector(".appointment-form");
 var dateEntry = document.querySelector(".date-entry");
 var dateLeave = document.querySelector(".date-leave");
-var grownup = document.querySelector(".grownup");
-var children = document.querySelector(".children");
-var isStorageSupport = true;
-var storage = "";
-try {
-  storage = localStorage.getItem("dateEntry");
-  storage = localStorage.getItem("dateLeave");
-} catch (err) {
-  isStorageSupport = false;
-}
+var grownup = document.querySelector(".input-grownup");
+
+var children = document.querySelector(".input-children");
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
+  popup.classList.remove("modal-error");
+  dateEntry.focus();
+});
+
+form.addEventListener("submit", function(evt) {
+  if (!dateEntry.value || !dateLeave.value || !grownup.value || !children.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  }
 });
 
 window.addEventListener("keydown", function(evt) {
