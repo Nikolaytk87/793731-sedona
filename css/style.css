@@ -161,8 +161,8 @@ a {
 
 
 /* #########################
-  # СТИЛИ ДЛЯ БЛОКА ADVANTAGES
-  ######################### */
+# СТИЛИ ДЛЯ БЛОКА ADVANTAGES
+######################### */
 
 .advantages {
     text-align: center;
@@ -317,8 +317,8 @@ a {
 
 
 /* #########################
-  # СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
-  ######################### */
+# СТИЛИ ДЛЯ БЛОКА APPOINTMENTS
+######################### */
 
 .appointment {
     position: relative;
@@ -345,7 +345,7 @@ a {
 .appointment-popup {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: none;
+    display: flex;
     position: absolute;
     bottom: -395px;
     left: 50%;
@@ -355,6 +355,10 @@ a {
     margin-left: -285px;
     text-align: center;
     background-color: #ffffff;
+}
+
+.hidden {
+    display: none;
 }
 
 .modal-show {
@@ -780,8 +784,8 @@ input::-ms-clear {
 
 
 /* #########################
-  # Стили для страницы отелей/Фильтр отелей
-  ######################### */
+# Стили для страницы отелей/Фильтр отелей
+######################### */
 
 .filter {
     border: none;
@@ -1055,8 +1059,8 @@ input::-ms-clear {
 
 
 /* #########################
-  # Стили для страницы отелей/Cортировка
-  ######################### */
+# Стили для страницы отелей/Cортировка
+######################### */
 
 .sort {
     display: -webkit-box;
@@ -1356,8 +1360,8 @@ input::-ms-clear {
 
 
 /* #########################
-  # СТИЛИ ДЛЯ БЛОКА FOOTER
-  ######################### */
+# СТИЛИ ДЛЯ БЛОКА FOOTER
+######################### */
 
 .main-footer {
     position: relative;

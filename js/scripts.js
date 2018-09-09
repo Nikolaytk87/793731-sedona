@@ -4,6 +4,9 @@ var form = document.querySelector(".appointment-form");
 var dateEntry = document.querySelector(".date-entry");
 var dateLeave = document.querySelector(".date-leave");
 var grownup = document.querySelector(".input-grownup");
+if (popup) {
+  popup.classList.add('hidden');
+};
 
 var children = document.querySelector(".input-children");
 link.addEventListener("click", function(evt) {
